@@ -1,0 +1,57 @@
+<div class="app flex-row align-items-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <form (ngSubmit)="onLogin()" #f="ngForm">
+          <div class="login-form">
+            <div class="login-header">
+              <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 text-center">
+                  <img src="/assets/img/logo_white.png" class="logo-img">
+                </div>
+              </div>
+            </div>
+            <div class="login-body"> 
+              <div class="col-md-12 text-center">
+                <p class="text-muted">Sign In to your account</p>
+              </div>         
+              <div class="input-group mb-1">
+                <span class="input-group-addon"><i class="icon-user"></i></span>
+                <input type="text"
+                class="form-control"
+                placeholder="username"
+                ngModel
+                name = "username"
+                required
+                email
+                #user="ngModel">                 
+              </div>
+              <p class="help-block" style="color:red;" *ngIf="!user.valid && user.touched">Please enter a valid user name!</p>
+              <div class="input-group mb-2">
+                <span class="input-group-addon"><i class="icon-lock"></i></span>
+                <input type="password"
+                class="form-control"
+                placeholder="Password"
+                ngModel
+                name="password"
+                required
+                #pass="ngModel">                
+              </div>
+              <p class="help-block" style="color:red;" *ngIf="!pass.valid && pass.touched">Please enter a valid password!</p>
+              <p class="help-block" style="color:red;" *ngIf="!success">{{ validationError }}</p>
+              <div class="row">
+                <div class="col-md-12 login-button">
+                <button type="submit" class="btn btn-primary px-2">Login</button>
+                </div>
+                <div class="col-12 text-center">
+                  <a href="" [routerLink]="['/pages/forgot']" class="px-0">Forgot Password?</a>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

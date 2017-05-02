@@ -1,0 +1,70 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "mmk-m3s"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css",
+       "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+       "assets/plugins/font-awesome/css/font-awesome.css",
+       "assets/css/tempal-icons.css",
+       "assets/css/masterslider.css",
+       "assets/css/jquery.scrollbar.css",
+       "assets/plugins/jquery-datetimepicker/css/jquery.datetimepicker.css",
+       "assets/plugins/select2/css/select2.min.css",
+       "assets/plugins/switchery/css/switchery.min.css",
+       "assets/plugins/ion-slider/css/ion.rangeSlider.css",
+       "assets/css/ion.rangeSlider.skinFlat.css",
+       "assets/css/styles.css",
+       "assets/plugins/dzscalendar/css/dzstooltip.css",
+       "assets/plugins/dzscalendar/css/calendar_style.css" 
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json"
+    },
+    {
+      "project": "src/tsconfig.spec.json"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}

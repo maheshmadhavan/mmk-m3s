@@ -29,7 +29,7 @@ const routes: Routes = [
     }
   },
   {
-    path: 'profile',
+    path: 'profile/:talentid',
     component: ProfileComponent,
     data: {
       title: 'Profile'

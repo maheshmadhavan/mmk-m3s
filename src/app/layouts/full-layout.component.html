@@ -32,15 +32,12 @@
     <div class=" pull-right"> 
       <!-- START User Info-->
       <div class="visible-lg visible-md m-t-15">
-        <div class="dropdown pull-right m-l-30">
+        <div class="dropdown pull-right m-l-30" menuDropdown>
           <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="thumbnail-wrapper d40 circular m-r-15"> <img src="../assets/images/profiles/employer-avatar_small.jpg" alt="" data-src="../assets/images/profiles/employer-avatar_small.jpg" data-src-retina="../assets/images/profiles/employer-avatar_small2x.jpg" width="40" height="40"> </span>
-          <div class="pull-right p-t-10 fs-16 font-heading"> <span class="semi-bold">Sean Gardner</span> <i class="fa fa-angle-down p-l-5"></i> </div>
+          <div class="pull-right p-t-10 fs-16 font-heading"> <span class="semi-bold">{{ loggedUser }}</span> <i class="fa fa-angle-down p-l-5"></i> </div>
           </button>
-          <ul class="dropdown-menu profile-dropdown m-t-5" role="menu">
-            <li class="active"><a href="account.html"><img src="../assets/images/icons/account-702.svg" alt="account" height="18" class="m-r-10"> Account</a> </li>
-            <li><a href="settings.html"><img src="../assets/images/icons/settings-885.svg" alt="settings" height="18" class="m-r-10"> Settings</a> </li>
-            <li><a href="invite-friends.html"><img src="../assets/images/icons/invite-1090.svg" alt="invite friends" height="18" class="m-r-10"> Invite Friends</a> </li>
-            <li class="bg-grey-lighter"> <a href="../index.html" class="clearfix"> <img src="../assets/images/icons/logout-555.svg" alt="logout" height="18" class="m-r-10"> Log Out </a> </li>
+          <ul class="dropdown-menu profile-dropdown m-t-5"  role="menu">  
+            <li class="bg-grey-lighter"> <a (click)="logOut()" class="clearfix"> <img src="../assets/images/icons/logout-555.svg" alt="logout" height="18" class="m-r-10"> Log Out </a> </li>
           </ul>
         </div>
       </div>

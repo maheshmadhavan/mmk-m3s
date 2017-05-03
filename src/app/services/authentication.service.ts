@@ -26,15 +26,15 @@ export class AuthenticationService {
     this.router.navigate(['pages/login']);
   }
  
-  loginUser(user){   
-    this.authenticatedUser = this.users.find(u => u.email === user.username);   
+  loginUser(user){    
+    this.authenticatedUser = this.users.find(u => u.email === user.email);   
     if (this.authenticatedUser && this.authenticatedUser.password === user.password){ 
       localStorage.setItem("user", JSON.stringify(this.authenticatedUser));      
       localStorage.setItem("username", this.authenticatedUser.firstname); 
-      if(this.authenticatedUser.usertype == 'admin')     
-        this.router.navigate(['dashboard']);
+      if(this.authenticatedUser.accounttype == 'client')     
+        this.router.navigate(['talent']);
       else
-        this.router.navigate(['employee/dashboard']);
+        this.router.navigate(['pages']);
       return true;
     }   
     return false;

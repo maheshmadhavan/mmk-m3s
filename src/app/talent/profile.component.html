@@ -14,8 +14,8 @@
             </div>
             <div class="row">
               <div class="col-md-12 text-center">
-                <h3 class="m-t-20 m-b-0">Jane Kelly</h3>
-                <p class="m-t-5 m-b-20">Customer Service Representative</p>
+                <h3 class="m-t-20 m-b-0">{{ talentDetail.firstname }} {{ talentDetail.lastname }}</h3>
+                <p class="m-t-5 m-b-20">{{ talentDetail.jobtitle }}</p>
                 <!--<button type="button" class="btn btn-primary">Select to Hire</button>-->
               </div>
             </div>
@@ -53,41 +53,21 @@
                               <div class="carousel slide m-t-20" id="expertise-rotate" data-interval="false">
                                 <div class="carousel-inner"> 
                                   <!-- START review -->
-                                  <div class="item active">
-                                    <div class="block-title">Sector</div>
-                                    <p class="semi-bold">Customer Service</p>
-                                    <div class="block-title">Job Title</div>
-                                    <p class="semi-bold">Customer Service Representative</p>
-                                    <div class="block-title">Experience</div>
-                                    <p class="semi-bold">Some - a few years experience</p>
-                                    <div class="clearfix"></div>
-                                  </div>
-                                  <!-- END review --> 
-                                  <!-- START review -->
-                                  <div class="item">
-                                    <div class="block-title">Sector</div>
-                                    <p class="semi-bold">Call Centre</p>
-                                    <div class="block-title">Job Title</div>
-                                    <p class="semi-bold">IT Customer Support</p>
-                                    <div class="block-title">Experience</div>
-                                    <p class="semi-bold">Little - starting to build experience</p>
-                                    <div class="clearfix"></div>
-                                  </div>
-                                  <!-- END review --> 
-                                  <!-- START review -->
-                                  <div class="item">
-                                    <div class="block-title">Sector</div>
-                                    <p class="semi-bold">Office Support</p>
-                                    <div class="block-title">Job Title</div>
-                                    <p class="semi-bold">Office Administrator</p>
-                                    <div class="block-title">Experience</div>
-                                    <p class="semi-bold">Lots - Many years experience</p>
-                                    <div class="clearfix"></div>
+                                  <div class="item" *ngFor="let sector of talentDetail.sectors;let i=index;">
+                                    
+                                      <div class="block-title">Sector</div>
+                                      <p class="semi-bold">Customer Service</p>
+                                      <div class="block-title">Job Title</div>
+                                      <p class="semi-bold">Customer Service Representative</p>
+                                      <div class="block-title">Experience</div>
+                                      <p class="semi-bold">Some - a few years experience</p>
+                                      <div class="clearfix"></div>
+                                    
                                   </div>
                                   <!-- END review --> 
                                 </div>
                               </div>
-                              <div class="text-center"> <a class="left" href="#expertise-rotate" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right" href="#expertise-rotate" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                              <div class="text-center"> <a class="left" href="javascript:;" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right" href="javascript:;" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
                                 <div class="clearfix"> </div>
                               </div>
                             </div>

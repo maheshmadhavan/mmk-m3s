@@ -1,4 +1,4 @@
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import 'rxjs/add/operator/map';
@@ -6,16 +6,12 @@ import 'rxjs/add/operator/map';
 import { Sector } from '../models/sector.model';
 
 @Injectable()
-export class SectorService implements OnInit {
+export class SectorService {
   sectorChanged = new Subject<Sector[]>();
   private sectors: Sector[] = [];
   
   constructor(private http: Http) {
     this.getSectorsJson();
-  }
-
-  ngOnInit() {
-    //this.getSectorsJson();
   }
 
   getSectorsJson() {

@@ -26,6 +26,7 @@ import { LeaveService } from './services/leave.service';
 import { HolidayService } from './services/holiday.service';
 import { ReportService } from './services/report.service';
 import { LogsService } from './services/logs.service';
+import { TalentComponent } from './talent/talent.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { LogsService } from './services/logs.service';
     NAV_DROPDOWN_DIRECTIVES,
     BreadcrumbsComponent,
     SIDEBAR_TOGGLE_DIRECTIVES,
-    AsideToggleDirective,    
+    AsideToggleDirective,
+    TalentComponent,    
     
   ],
   providers: [{

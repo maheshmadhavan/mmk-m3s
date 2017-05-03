@@ -12,20 +12,6 @@ export const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: '',
-    component: FullLayoutComponent,
-    data: {
-      title: 'Home'
-    },
-    children: [
-      {
-        path: 'dashboard',
-        loadChildren: './dashboard/dashboard.module#DashboardModule'
-      },    
-     
-    ]
-  },
-  {
     path: 'pages', 
     component: SimpleLayoutComponent,   
     data: {

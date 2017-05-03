@@ -8,9 +8,9 @@ import { BrowseTalentComponent } from './browse-talent.component';
 const routes: Routes = [
   {
     path: '',
-    component: TalentComponent,
+    component: SectorComponent,
     data: {
-      title: 'Talent'
+      title: 'Choose Sectors'
     }
   },
   {

@@ -18,11 +18,6 @@ import { SimpleLayoutComponent } from './layouts/simple-layout.component';
 //services
 import { AuthenticationService } from './services/authentication.service';
 import { UserService } from './services/user.service';
-import { ProjectService } from './services/project.service';
-import { LeaveService } from './services/leave.service';
-import { HolidayService } from './services/holiday.service';
-import { ReportService } from './services/report.service';
-import { LogsService } from './services/logs.service';
 import { SectorService } from './services/sector.service';
 import { BrowseTalentService } from './services/browse-talent.service';
 
@@ -46,11 +41,6 @@ import { BrowseTalentService } from './services/browse-talent.service';
     },
     AuthenticationService,
     UserService,
-    ProjectService,
-    LeaveService,
-    HolidayService,
-    ReportService,
-    LogsService,
     SectorService,
     BrowseTalentService
   ],

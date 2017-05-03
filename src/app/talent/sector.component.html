@@ -8,11 +8,11 @@
     </div>
     <div class="row m-t-60">
       <div class="col-md-3 col-sm-6 col-xs-12 text-center" *ngFor="let sector of sectors"> 
-      	<a href="" class="sector box"> 
+      	<a href="" [routerLink]="['/talent/browse-talents']" class="sector box"> 
       	<img src="{{ sector.image_url }}" alt="" class="img-circle img-responsive">
         <h5 class="m-t-40">{{ sector.name }}</h5>
         <p class="m-b-60">{{ sector.description }}<br>
-          (+2 more)</p>
+          </p>
         </a> 
       </div>
     </div>

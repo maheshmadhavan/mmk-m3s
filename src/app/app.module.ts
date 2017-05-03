@@ -21,7 +21,7 @@ import { HolidayService } from './services/holiday.service';
 import { ReportService } from './services/report.service';
 import { LogsService } from './services/logs.service';
 import { SectorService } from './services/sector.service';
-
+import { BrowseTalentService } from './services/browse-talent.service';
 
 @NgModule({
   imports: [
@@ -47,7 +47,8 @@ import { SectorService } from './services/sector.service';
     HolidayService,
     ReportService,
     LogsService,
-    SectorService
+    SectorService,
+    BrowseTalentService
   ],
   bootstrap: [ AppComponent ]
 })

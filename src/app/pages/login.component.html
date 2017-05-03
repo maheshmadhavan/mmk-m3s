@@ -20,14 +20,12 @@
               email
               #email="ngModel"> 
             </div>
-            <p class="help-block" style="color:red;" *ngIf="!email.valid && email.touched">Please enter a valid email id!</p>
-          </div>
-          <!-- END Form Control--> 
-          <!-- START Form Control-->
+            <!-- <p class="help-block" style="color:red;" *ngIf="!email.valid && email.touched">Please enter a valid email id!</p> -->
+          </div>          
           <div class="form-group form-group-default">
-            <label>Password <a href="#" class="pull-right">show</a></label>
+            <label>Password <a href="#" class="pull-right" (click) = "showHidePassword()" >show</a></label>
             <div class="controls">
-              <input type="password"
+              <input type="{{ passType }}"
               class="form-control"
               placeholder="Password"
               ngModel
@@ -35,7 +33,7 @@
               required
               #password="ngModel"> 
             </div>
-            <p class="help-block" style="color:red;" *ngIf="!password.valid && password.touched">Please enter a valid password!</p>
+            <!-- <p class="help-block" style="color:red;" *ngIf="!password.valid && password.touched">Please enter a valid password!</p> -->
             <p class="help-block" style="color:red;" *ngIf="!success">{{ validationError }}</p>
           </div>
           <button class="btn btn-primary btn-lg full-width m-t-20" type="submit">Login</button>

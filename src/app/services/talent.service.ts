@@ -3,7 +3,7 @@ import { Subject } from 'rxjs/Subject';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import 'rxjs/add/operator/map';
 
-@Injectable()
+
 import { Talent } from '../shared/talent.model';
 
 export class TalentService {

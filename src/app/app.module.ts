@@ -18,6 +18,7 @@ import { AppRoutingModule } from './app.routing';
 
 // Layouts
 import { FullLayoutComponent } from './layouts/full-layout.component';
+import { SimpleLayoutComponent } from './layouts/simple-layout.component';
 //services
 import { AuthenticationService } from './services/authentication.service';
 import { UserService } from './services/user.service';
@@ -40,7 +41,8 @@ import { TalentComponent } from './talent/talent.component';
   ],
   declarations: [
     AppComponent,
-    FullLayoutComponent,    
+    FullLayoutComponent,
+    SimpleLayoutComponent,    
     NAV_DROPDOWN_DIRECTIVES,
     BreadcrumbsComponent,
     SIDEBAR_TOGGLE_DIRECTIVES,

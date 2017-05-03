@@ -1,0 +1,44 @@
+[
+	{
+		"id" : "1",
+		"name" : "Customer Service",
+		"description" : "Call Centre \/ Customer Service",
+		"image_url" : "assets\/images\/sectors\/sector-call-centre.jpg",
+		"status" : "active"
+	},
+	{
+		"id" : "2",
+		"name" : "Data Entry",
+		"description" : "Office Support",
+		"image_url" : "assets\/images\/sectors\/sector-customer-service.jpg",
+		"status" : "active"
+	},
+	{
+		"id" : "3",
+		"name" : "Executive Assistant",
+		"description" : "Executive \/ Personal Assistant",
+		"image_url" : "assets\/images\/sectors\/sector-customer-service2.jpg",
+		"status" : "active"
+	},
+	{
+		"id" : "4",
+		"name" : "Office Administrator",
+		"description" : "Office Support",
+		"image_url" : "assets\/images\/sectors\/sector-customer-service3.jpg",
+		"status" : "active"
+	},
+	{
+		"id" : "5",
+		"name" : "Personal Assistant",
+		"description" : "Executive \/ Personal Assistant",
+		"image_url" : "assets\/images\/sectors\/sector-legal-support.jpg",
+		"status" : "active"
+	},
+	{
+		"id" : "6",
+		"name" : "Secretary",
+		"description" : "Office Support",
+		"image_url" : "assets\/images\/sectors\/sector-office-support.jpg",
+		"status" : "active"
+	},
+]

@@ -38,6 +38,20 @@ export const routes: Routes = [
       }
     ]
   },  
+  {
+    path: 'talent',
+    component: FullLayoutComponent,
+    data: {
+      title: 'Talent'
+    },
+    children: [
+      {
+        path: '',
+        loadChildren: './talent/talent.module#TalentModule',
+      },    
+     
+    ]
+  },
   
 ];
 

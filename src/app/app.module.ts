@@ -27,7 +27,7 @@ import { LeaveService } from './services/leave.service';
 import { HolidayService } from './services/holiday.service';
 import { ReportService } from './services/report.service';
 import { LogsService } from './services/logs.service';
-import { TalentComponent } from './talent/talent.component';
+import { SectorService } from './services/sector.service';
 
 
 @NgModule({
@@ -46,8 +46,7 @@ import { TalentComponent } from './talent/talent.component';
     NAV_DROPDOWN_DIRECTIVES,
     BreadcrumbsComponent,
     SIDEBAR_TOGGLE_DIRECTIVES,
-    AsideToggleDirective,
-    TalentComponent,    
+    AsideToggleDirective
     
   ],
   providers: [{
@@ -60,7 +59,8 @@ import { TalentComponent } from './talent/talent.component';
     LeaveService,
     HolidayService,
     ReportService,
-    LogsService
+    LogsService,
+    SectorService
   ],
   bootstrap: [ AppComponent ]
 })

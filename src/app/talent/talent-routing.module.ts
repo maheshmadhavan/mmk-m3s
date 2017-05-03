@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { TalentComponent } from './talent.component';
 import { SectorComponent } from './sector.component';
+import { BrowseTalentComponent } from './browse-talent.component';
 import { ProfileComponent } from './profile.component';
 
 const routes: Routes = [
@@ -18,6 +19,13 @@ const routes: Routes = [
     component: SectorComponent,
     data: {
       title: 'Choose Sectors'
+    }
+  },
+  {
+    path: 'browse-talents',
+    component: BrowseTalentComponent,
+    data: {
+      title: 'Browse Talents'
     }
   },
   {

@@ -5,6 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { DropdownModule } from 'ng2-bootstrap/dropdown';
+import { TabsModule } from 'ng2-bootstrap/tabs';
+import { NAV_DROPDOWN_DIRECTIVES } from './shared/nav-dropdown.directive';
 
 // Routing Module
 import { AppRoutingModule } from './app.routing';
@@ -22,7 +25,7 @@ import { ReportService } from './services/report.service';
 import { LogsService } from './services/logs.service';
 import { SectorService } from './services/sector.service';
 import { TalentService } from './services/talent.service';
-
+import { BrowseTalentService } from './services/browse-talent.service';
 
 @NgModule({
   imports: [
@@ -34,7 +37,8 @@ import { TalentService } from './services/talent.service';
   declarations: [
     AppComponent,
     FullLayoutComponent,
-    SimpleLayoutComponent
+    SimpleLayoutComponent,
+    NAV_DROPDOWN_DIRECTIVES
     
   ],
   providers: [{
@@ -49,6 +53,7 @@ import { TalentService } from './services/talent.service';
     ReportService,
     LogsService,
     SectorService,
+    BrowseTalentService,
     TalentService
   ],
   bootstrap: [ AppComponent ]

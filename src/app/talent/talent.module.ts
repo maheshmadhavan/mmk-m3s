@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { TalentComponent } from './talent.component';
 import { TalentRoutingModule } from './talent-routing.module';
 import { SectorComponent } from './sector.component';
+import { BrowseTalentComponent } from './browse-talent.component';
 import { ProfileComponent } from './profile.component';
 
 
@@ -15,6 +16,7 @@ import { ProfileComponent } from './profile.component';
   declarations: [ 
   	TalentComponent,
   	SectorComponent,
+  	BrowseTalentComponent,
     ProfileComponent
   ]
 })

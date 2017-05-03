@@ -1,35 +1,51 @@
-<div class="login-wrapper p-t-60 sm-p-t-30"> 
-  
-  <!-- START Login Right Container-->
-  <div class="login-container">
-    <div class="form-wrapper p-l-70 p-r-70 p-b-60 sm-p-l-20 sm-p-r-20 sm-p-t-30">
-      <form id="form-login" class="p-t-40 sm-p-t-10" role="form" action="employer/dashboard.html">
-            <div class="text-center"> <a href="index.html"><img src="assets/images/tempal-logo-dark.svg" alt="logo" height="55" class=""></a>
-              <p class="p-t-25">Login to your <span class="semi-bold">account</span></p>
+<div class="app flex-row align-items-center">
+  <div class="login-wrapper p-t-60 sm-p-t-30"> 
+    <!-- START Login Right Container-->
+    <div class="login-container">
+      <div class="form-wrapper p-l-70 p-r-70 p-b-60 sm-p-l-20 sm-p-r-20 sm-p-t-30">
+        <form id="form-login" class="p-t-40 sm-p-t-10" role="form" (ngSubmit)="onLogin()" #f="ngForm">
+          <div class="text-center"> <a href="index.html"><img src="assets/images/tempal-logo-dark.svg" alt="logo" height="55" class=""></a>
+            <p class="p-t-25">Login to your <span class="semi-bold">account</span></p>
+          </div>
+          <!-- START Form Control-->
+          <div class="form-group form-group-default">
+            <label>Email Address</label>
+            <div class="controls">
+              <input type="text"
+              class="form-control"
+              placeholder="Email"
+              ngModel
+              name = "email"
+              required
+              email
+              #email="ngModel"> 
             </div>
-            <!-- START Form Control-->
-            <div class="form-group form-group-default">
-              <label>Email Address</label>
-              <div class="controls">
-                <input type="text" name="email" placeholder="" class="form-control" required>
-              </div>
+            <p class="help-block" style="color:red;" *ngIf="!email.valid && email.touched">Please enter a valid email id!</p>
+          </div>
+          <!-- END Form Control--> 
+          <!-- START Form Control-->
+          <div class="form-group form-group-default">
+            <label>Password <a href="#" class="pull-right">show</a></label>
+            <div class="controls">
+              <input type="password"
+              class="form-control"
+              placeholder="Password"
+              ngModel
+              name="password"
+              required
+              #password="ngModel"> 
             </div>
-            <!-- END Form Control--> 
-            <!-- START Form Control-->
-            <div class="form-group form-group-default">
-              <label>Password <a href="#" class="pull-right">show</a></label>
-              <div class="controls">
-                <input type="password" name="password" placeholder="" class="form-control" required>
-              </div>
-            </div>
-            <button class="btn btn-primary btn-lg full-width m-t-20" type="submit">Login</button>
-            <div class="m-t-40 sm-p-b-20 clearfix">
-              <p class="text-center"><a href="forgot-password.html">Forgot password?</a></p>
-            </div>          
-          <div class="clearfix"></div>       
-      </form>
+            <p class="help-block" style="color:red;" *ngIf="!password.valid && password.touched">Please enter a valid password!</p>
+            <p class="help-block" style="color:red;" *ngIf="!success">{{ validationError }}</p>
+          </div>
+          <button class="btn btn-primary btn-lg full-width m-t-20" type="submit">Login</button>
+          <div class="m-t-40 sm-p-b-20 clearfix">
+          <p class="text-center"><a href="" [routerLink]="['/pages/forgot']">Forgot password?</a></p>
+          </div>
+          <div class="clearfix"></div>
+        </form>
+      </div>
+      <!-- end form-wrapper --> 
     </div>
-    <!-- end form-wrapper --> 
   </div>
-  <!-- END Login Right Container--> 
 </div>

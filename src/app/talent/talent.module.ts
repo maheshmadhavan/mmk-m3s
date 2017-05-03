@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { TalentComponent } from './talent.component';
 import { TalentRoutingModule } from './talent-routing.module';
 import { SectorComponent } from './sector.component';
+import { BrowseTalentComponent } from './browse-talent.component';
 
 @NgModule({
   imports: [
@@ -12,7 +13,8 @@ import { SectorComponent } from './sector.component';
   ],
   declarations: [ 
   	TalentComponent,
-  	SectorComponent
+  	SectorComponent,
+  	BrowseTalentComponent
   ]
 })
 export class TalentModule { }

@@ -1,0 +1,52 @@
+[
+	{
+		"id" : "1",
+		"talentid" : "5001",
+		"talentname" : "Jane Kelly",
+		"jobtitle" : "Customer Service Representative",
+		"rating" : "4",
+		"image_url": "assets\/images\/talents\/jane-kelly.jpg",
+		"bookings" : "10",
+		"averagerate" : "15"
+	},
+	{
+		"id" : "2",
+		"talentid" : "5002",
+		"talentname" : "Mark Craddock",
+		"jobtitle" : "Customer Service Representative",
+		"rating" : "4.5",
+		"image_url": "assets\/images\/talents\/mark-craddock.jpg",
+		"bookings" : "12",
+		"averagerate" : "25"
+	},
+	{
+		"id" : "3",
+		"talentid" : "5003",
+		"talentname" : "Dianne Johnson",
+		"jobtitle" : "Customer Service Representative",
+		"rating" : "3",
+		"image_url": "assets\/images\/talents\/dianne-johnson.jpg",
+		"bookings" : "5",
+		"averagerate" : "10"
+	},
+	{
+		"id" : "4",
+		"talentid" : "5004",
+		"talentname" : "Demo Talent",
+		"jobtitle" : "Customer Service Representative",
+		"rating" : "3.5",
+		"image_url": "assets\/images\/talents\/demo-talent.jpg",
+		"bookings" : "8",
+		"averagerate" : "12"
+	},
+	{
+		"id" : "5",
+		"talentid" : "5123",
+		"talentname" : "Lakshmikanth V",
+		"jobtitle" : "Customer Service Representative",
+		"rating" : "4",
+		"image_url": "assets\/images\/talents\/lakshmikant-v.jpg",
+		"bookings" : "15",
+		"averagerate" : "25"
+	}
+]

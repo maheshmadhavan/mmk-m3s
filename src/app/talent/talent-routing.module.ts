@@ -9,9 +9,9 @@ import { ProfileComponent } from './profile.component';
 const routes: Routes = [
   {
     path: '',
-    component: TalentComponent,
+    component: SectorComponent,
     data: {
-      title: 'Talent'
+      title: 'Choose Sectors'
     }
   },
   {

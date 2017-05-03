@@ -32,7 +32,7 @@ export class AuthenticationService {
       localStorage.setItem("user", JSON.stringify(this.authenticatedUser));      
       localStorage.setItem("username", this.authenticatedUser.firstname); 
       if(this.authenticatedUser.accounttype == 'client')     
-        this.router.navigate(['talent']);
+        this.router.navigate(['talent/sector']);
       else
         this.router.navigate(['pages']);
       return true;

@@ -5,6 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { DropdownModule } from 'ng2-bootstrap/dropdown';
+import { TabsModule } from 'ng2-bootstrap/tabs';
+import { NAV_DROPDOWN_DIRECTIVES } from './shared/nav-dropdown.directive';
 
 // Routing Module
 import { AppRoutingModule } from './app.routing';
@@ -33,7 +36,8 @@ import { SectorService } from './services/sector.service';
   declarations: [
     AppComponent,
     FullLayoutComponent,
-    SimpleLayoutComponent
+    SimpleLayoutComponent,
+    NAV_DROPDOWN_DIRECTIVES
     
   ],
   providers: [{

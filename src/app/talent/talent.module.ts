@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { TalentComponent } from './talent.component';
 import { TalentRoutingModule } from './talent-routing.module';
 import { SectorComponent } from './sector.component';
+import { ProfileComponent } from './profile.component';
+
 
 @NgModule({
   imports: [
@@ -10,7 +12,8 @@ import { SectorComponent } from './sector.component';
   ],
   declarations: [ 
   	TalentComponent,
-  	SectorComponent
+  	SectorComponent,
+    ProfileComponent
   ]
 })
 export class TalentModule { }

@@ -19,6 +19,7 @@ import { SimpleLayoutComponent } from './layouts/simple-layout.component';
 import { AuthenticationService } from './services/authentication.service';
 import { UserService } from './services/user.service';
 import { SectorService } from './services/sector.service';
+import { TalentService } from './services/talent.service';
 import { BrowseTalentService } from './services/browse-talent.service';
 
 @NgModule({
@@ -42,7 +43,8 @@ import { BrowseTalentService } from './services/browse-talent.service';
     AuthenticationService,
     UserService,
     SectorService,
-    BrowseTalentService
+    BrowseTalentService,
+    TalentService
   ],
   bootstrap: [ AppComponent ]
 })

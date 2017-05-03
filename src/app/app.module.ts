@@ -21,6 +21,7 @@ import { HolidayService } from './services/holiday.service';
 import { ReportService } from './services/report.service';
 import { LogsService } from './services/logs.service';
 import { SectorService } from './services/sector.service';
+import { TalentService } from './services/talent.service';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { SectorService } from './services/sector.service';
     HolidayService,
     ReportService,
     LogsService,
-    SectorService
+    SectorService,
+    TalentService
   ],
   bootstrap: [ AppComponent ]
 })

@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
-//import { Profile } from '../models/sector.model';
-//import { SectorService } from '../services/sector.service'; 
+import { Talent } from '../shared/talent.model';
+import { TalentService } from '../services/talent.service'; 
 
 @Component({
   templateUrl: './profile.component.html'
 })
 export class ProfileComponent implements OnInit {
-  //sectors: Sector[] = [];
+  talentDetails: Talent[] = [];
 
-  constructor() { }
+  constructor( private talentService: TalentService) { }
 
   ngOnInit() {
   	// this.sectors = this.sectorService.getSectors();
@@ -20,5 +20,11 @@ export class ProfileComponent implements OnInit {
     //       }
     //     );
   }
+   showTalent(talentId:string){ 
+    this.talentDetails = this.talentService.getOneTalent("5000");   
+    console.log(this.talentDetails);         
+  }
+
+ 
 
 }

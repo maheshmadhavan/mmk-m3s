@@ -15,13 +15,13 @@ export class TalentService {
   }
 
   getTalentsJson() {
-      this.http.get("./src/app/shared/talent.json")
+      this.http.get("././src/assets/jsons/talent.json")
               .map(
                   (response: Response) => {
                     const talents: Talent[] = response.json();
                     for(let talent of talents) {
                       if(!talent) {
-                      // console.log(project);
+                       console.log(talent);
                       }
                     }
                     return talents;
@@ -33,7 +33,6 @@ export class TalentService {
                 });
     }
   setTalents(talents: Talent[]) {
-   // console.log(talents);
     this.talents = talents;
     this.talentChanged.next(this.talents.slice());
   }

@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { TalentComponent } from './talent.component';
 import { TalentRoutingModule } from './talent-routing.module';
@@ -8,7 +9,8 @@ import { ProfileComponent } from './profile.component';
 
 @NgModule({
   imports: [
-    TalentRoutingModule
+    TalentRoutingModule,
+    CommonModule
   ],
   declarations: [ 
   	TalentComponent,

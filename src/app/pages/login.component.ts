@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
-import { AuthenticationService } from '../shared/authentication.service';
+import { AuthenticationService } from '../services/authentication.service';
 
 @Component({
   templateUrl: 'login.component.html',

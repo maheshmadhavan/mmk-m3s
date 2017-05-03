@@ -1,6 +1,6 @@
 import { Subject } from 'rxjs/Subject';
 
-import { Leave } from './leave.model';
+import { Leave } from '../models/leave.model';
 
 export class LeaveService {
   leaveEntryChanged = new Subject<Leave[]>();

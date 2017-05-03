@@ -3,7 +3,7 @@ import { Subject } from 'rxjs/Subject';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import 'rxjs/add/operator/map';
 
-import { Project } from './project.model';
+import { Project } from '../models/project.model';
 
 @Injectable()
 export class ProjectService implements OnInit {
@@ -19,7 +19,7 @@ export class ProjectService implements OnInit {
   }
 
   getProjectsJson() {
-    this.http.get("./src/app/shared/projects.json")
+    this.http.get("./src/assets/jsons/projects.json")
              .map(
                 (response: Response) => {
                   const projects: Project[] = response.json();

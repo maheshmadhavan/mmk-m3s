@@ -19,13 +19,13 @@ import { AppRoutingModule } from './app.routing';
 // Layouts
 import { FullLayoutComponent } from './layouts/full-layout.component';
 //services
-import { AuthenticationService } from './shared/authentication.service';
-import { UserService } from './shared/user.service';
-import { ProjectService } from './shared/project.service';
-import { LeaveService } from './shared/leave.service';
-import { HolidayService } from './shared/holiday.service';
-import { ReportService } from './shared/report.service';
-import { LogsService } from './shared/logs.service';
+import { AuthenticationService } from './services/authentication.service';
+import { UserService } from './services/user.service';
+import { ProjectService } from './services/project.service';
+import { LeaveService } from './services/leave.service';
+import { HolidayService } from './services/holiday.service';
+import { ReportService } from './services/report.service';
+import { LogsService } from './services/logs.service';
 
 
 @NgModule({

@@ -1,6 +1,6 @@
 import { Subject } from 'rxjs/Subject';
 
-import { Holiday } from './holiday.model';
+import { Holiday } from '../models/holiday.model';
 
 export class HolidayService {
 

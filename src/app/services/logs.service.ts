@@ -3,7 +3,7 @@ import { Subject } from 'rxjs/Subject';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import 'rxjs/add/operator/map';
 
-import { Logs } from './logs.model';
+import { Logs } from '../models/logs.model';
 
 @Injectable()
 export class LogsService { 
@@ -15,7 +15,7 @@ export class LogsService {
   }
 
   getLogsJson() {
-    this.http.get("./src/app/shared/logs.json")
+    this.http.get("./src/assets/jsons/logs.json")
              .map(
                 (response: Response) => {
                   const logs: Logs[] = response.json();

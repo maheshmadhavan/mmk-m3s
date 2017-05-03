@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 
-import { Logs } from './logs.model';
+import { Logs } from '../models/logs.model';
 import { LogsService } from './logs.service';
 
 @Injectable()

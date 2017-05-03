@@ -3,7 +3,7 @@ import { Subject } from 'rxjs/Subject';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import 'rxjs/add/operator/map';
 
-import { User } from './user.model';
+import { User } from '../models/user.model';
 
 @Injectable()
 export class UserService implements OnInit {
@@ -19,7 +19,7 @@ export class UserService implements OnInit {
   }
 
   getUserJson() {
-    this.http.get("./src/app/shared/users.json")
+    this.http.get("./src/assets/jsons/users.json")
              .map(
                 (response: Response) => {
                   const users: User[] = response.json();

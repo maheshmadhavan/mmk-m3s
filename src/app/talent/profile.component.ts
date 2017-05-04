@@ -17,6 +17,7 @@ export class ProfileComponent implements OnInit {
   languagesArray;
   native;
   fluent;
+  activeItem: number = 0;
 
   constructor( private talentService: TalentService,private route: ActivatedRoute) { }
 
@@ -58,25 +59,50 @@ export class ProfileComponent implements OnInit {
                             "lastname": "candidate", 
                             "email": "testcandidate@premiergp.com", 
                             "phonenumber": "123456789",
-                            "description": "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ", 
-                            "usertype": "talent", 
-                            "shift": "General", 
-                            "status": "Active",
+                            "address" : "Hume+House,+Pembroke+Road,+Ballsbridge,+Ireland",
+                            "description": "I have spent the last six years developing my skills as a customer service manager for Megacompany Inc., where I have won several performance awards and been promoted twice. I love managing teams and solving customer problems.", 
                             "jobtitle": "Customer Service Representative",
-                            "sectors": [
-                                  "Customer Service",
-                                  "Office Support",
-                                  "Call Centre"
-                              ],
-                              "experience": "Some - A few experience",
+                            "expertise" : [{
+                                "sector":"Customer Service", 
+                                "jobtitle":"Customer Service Representative",
+                                "experience":"Some - A few experience"  
+                             },
+                             {
+                                "sector":"Office Support", 
+                                "jobtitle":"Office Support Manager",
+                                "experience":"Little - A few experience"  
+                             },
+                             {
+                                "sector":"Call Centre", 
+                                "jobtitle":"Call Centre Executive",
+                                "experience":"Some - A few experience"  
+                             }],
                               "languages" : [{
-                                  "Native": ["German","English"],
-                                  "Fluent": ["French","English"]
+                                  "native": ["German"],
+                                  "fluent": ["French","English"]
                               }],
                               "location" : "Dublin",
-                              "distance" : "40KM",
-                              "profileimage": "/assets/images/profiles/1x.jpg"
+                              "distance" : "20KM",
+                              "profileimage": "/assets/images/talents/default.jpg"
                           };
    }
+  }
+
+  viewPrevious(newValue: number) {
+    if (this.activeItem === newValue || newValue < 0) {
+      this.activeItem = 0;
+    }
+    else {
+      this.activeItem = newValue;
+    }
+  }
+
+  viewNext(newValue: number) {
+    if (this.activeItem === newValue || newValue >= this.sectorsCount) {
+      this.activeItem = 0;
+    }
+    else {
+      this.activeItem = newValue;
+    }
   }
 }

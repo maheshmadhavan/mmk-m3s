@@ -49,13 +49,11 @@
                         <div id="expertise-row">
                           <div class="row">
                             <div class="col-md-12 column b-t b-dashed b-grey p-t-20">
-                              <h6>Expertise ({{ sectorsCount }})</h6>
+                              <h6>Expertise ({{ talentDetail.expertise }})</h6>
                               <div class="carousel slide m-t-20"  data-interval="false">
                                 <div class="carousel-inner" > 
-                                  <!-- START review -->
-                                 
-                                    
-                                    <div class="item" *ngFor="let exp of talentDetail.expertise;">
+                                  <!-- START review -->                                    
+                                  <div class="item" *ngFor="let exp of talentDetail.expertise;let i = index" [ngClass]="{'active': activeItem === i }">
                                     <div class="block-title">Sector</div>
                                     <p class="semi-bold">{{ exp.sector }}</p>
                                     <div class="block-title">Job Title</div>
@@ -67,7 +65,7 @@
                                   <!-- END review --> 
                                 </div>
                               </div>
-                              <div class="text-center"> <a class="left" href="#" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right" href="#" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                              <div class="text-center"> <a class="left" href="javascript:;" (click)="viewPrevious(activeItem-1)" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right" href="javascript:;"  (click)="viewNext(activeItem+1)" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
                                 <div class="clearfix"> </div>
                               </div>
                             </div>

@@ -3,7 +3,7 @@ import { Subject } from 'rxjs/Subject';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import 'rxjs/add/operator/map';
 
-import { Talent } from '../shared/talent.model';
+import { Talent } from '../models/talent.model';
 
 @Injectable()
 export class TalentService {
@@ -15,7 +15,7 @@ export class TalentService {
   }
 
   getTalentsJson() {
-      this.http.get("././src/assets/jsons/talent.json")
+      this.http.get("assets/jsons/talent.json")
               .map(
                   (response: Response) => {
                     const talents: Talent[] = response.json();

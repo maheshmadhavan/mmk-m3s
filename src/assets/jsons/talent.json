@@ -22,7 +22,7 @@
         }],
         "location" : "Dublin",
         "distance" : "40KM",
-        "profileimage": "/assets/images/1x.jpg"
+        "profileimage": "/assets/images/talents/default.jpg"
     },
     {
       "talentid": "5001", 
@@ -47,7 +47,7 @@
         }],
         "location" : "Dublin",
         "distance" : "40KM",
-        "profileimage": "/assets/images/2x.jpg"
+        "profileimage": "/assets/images/talents/demo-talent.jpg"
     },
     {
       "talentid": "5002", 
@@ -72,7 +72,7 @@
         }],
         "location" : "Dublin",
         "distance" : "40KM",
-        "profileimage": "/assets/images/3x.jpg"
+        "profileimage": "/assets/images/talents/dianne-johnson.jpg"
     },
    {
       "talentid": "5003", 
@@ -97,7 +97,7 @@
         }],
         "location" : "Dublin",
         "distance" : "40KM",
-        "profileimage": "/assets/images/4x.jpg"
+        "profileimage": "/assets/images/talents/jane-kelly.jpg"
     },
   {
       "talentid": "5004", 
@@ -115,14 +115,28 @@
             "Office Support",
             "Call Centre"
         ],
-        "experience": "Some - A few experience",
+        "expertise" : [{
+          "sector":"Customer Service", 
+          "jobtitle":"Customer Service Representative",
+          "experience":"Some - A few experience"  
+       },
+       {
+          "sector":"Office Support", 
+          "jobtitle":"Office Support Manager",
+          "experience":"Little - A few experience"  
+       },
+       {
+          "sector":"Call Centre", 
+          "jobtitle":"Call Centre Executive",
+          "experience":"Some - A few experience"  
+       }],
         "languages" : [{
-            "Native": ["German","English"],
-            "Fluent": ["French","English"]
+            "native": ["German","English"],
+            "fluent": ["French","English"]
         }],
         "location" : "Dublin",
         "distance" : "40KM",
-        "profileimage": "/assets/images/5x.jpg"
+        "profileimage": "/assets/images/talents/lakshmikant-v.jpg"
     },
   {
       "talentid": "5005", 
@@ -147,31 +161,7 @@
         }],
         "location" : "Dublin",
         "distance" : "40KM",
-        "profileimage": "/assets/images/6x.jpg"
+        "profileimage": "/assets/images/talents/mark-craddock.jpg"
     },
-  {
-      "talentid": "5006", 
-      "firstname": "Test6", 
-      "lastname": "candidate6", 
-      "email": "testcandidate6@premiergp.com", 
-      "phonenumber": "123456789",
-      "description": "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ", 
-      "usertype": "talent", 
-      "shift": "General", 
-      "status": "Active",
-      "jobtitle": "Customer Service Representative",
-      "sectors": [
-            "Customer Service",
-            "Office Support",
-            "Call Centre"
-        ],
-        "experience": "Some - A few experience",
-        "languages" : [{
-            "Native": ["German","English"],
-            "Fluent": ["French","English"]
-        }],
-        "location" : "Dublin",
-        "distance" : "40KM",
-        "profileimage": "/assets/images/7x.jpg"
-    }
+  
 ]

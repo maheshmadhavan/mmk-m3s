@@ -9,7 +9,7 @@
           <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
             <div class="row">
               <div class="col-md-3 col-sm-3 col-xs-3 text-right"><!--<span data-toggle="quickview" data-toggle-element="#quickview"><a href="#quickview-chat" class="booking-cta" data-toggle="tooltip" data-placement="top" title="message"><i class="icon icon-bubble" aria-hidden="true"></i></a></span> --></div>
-              <div class="col-md-6 col-sm-6 col-xs-6 text-center"> <img src="../assets/images/jane-kelly.jpg" alt="" class="profile-photo img-circle"> </div>
+              <div class="col-md-6 col-sm-6 col-xs-6 text-center"> <img [src] = "talentDetail.profileimage" alt="" class="profile-photo img-circle"> </div>
               <div class="col-md-3 col-sm-3 col-xs-3 text-left"> <!--<a href="shortlist.html" class="booking-cta" data-toggle="tooltip" data-placement="top" title="shortlist"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a> --></div>
             </div>
             <div class="row">
@@ -49,21 +49,22 @@
                         <div id="expertise-row">
                           <div class="row">
                             <div class="col-md-12 column b-t b-dashed b-grey p-t-20">
-                              <h6>Expertise (3)</h6>
+                              <h6>Expertise ({{ sectorsCount }})</h6>
                               <div class="carousel slide m-t-20" id="expertise-rotate" data-interval="false">
                                 <div class="carousel-inner"> 
                                   <!-- START review -->
-                                  <div class="item" *ngFor="let sector of talentDetail.sectors;let i=index;">
-                                    
-                                      <div class="block-title">Sector</div>
-                                      <p class="semi-bold">Customer Service</p>
-                                      <div class="block-title">Job Title</div>
-                                      <p class="semi-bold">Customer Service Representative</p>
-                                      <div class="block-title">Experience</div>
-                                      <p class="semi-bold">Some - a few years experience</p>
+                                 
+                                    <div class="item active">
+                                      <div class="block-title bold">Sectors</div>
+                                      <div  *ngFor="let sector of talentDetail.sectors;let i=index;">
+                                      <p class="" >{{ sector }}</p>
+                                      </div>
+                                      <div class="block-title bold">Job Title</div>
+                                      <p class="">{{ talentDetail.jobtitle }}</p>
+                                      <div class="block-title bold">Experience</div>
+                                      <p class="">{{ talentDetail.experience }}</p>
                                       <div class="clearfix"></div>
-                                    
-                                  </div>
+                                    </div>
                                   <!-- END review --> 
                                 </div>
                               </div>
@@ -106,11 +107,11 @@
                          
                             <div class="col-md-6 col-sm-6 p-t-20 b-r b-dashed b-grey">
                         <div class="block-title">currently based</div>
-                        <h4 class="no-margin">Dublin</h4>
+                        <h4 class="no-margin">{{ talentDetail.location }}</h4>
                       </div>
                       <div class="col-md-6 col-sm-6 p-t-20">
                         <div class="block-title">willing to work</div>
-                        <h4 class="no-margin">Max. 40km</h4>
+                        <h4 class="no-margin">Max. {{ talentDetail.distance }}</h4>
                       </div>
                           </div>
                       
@@ -122,13 +123,10 @@
                   <div class="col-lg-7 col-md-6 col-sm-12 b-l sm-no-border b-dashed b-grey sm-p-t-20 eq-height">
                     <div class="row m-l-20 xs-m-l-0 m-r-10 xs-m-r-0">
                       <div class="col-md-12">
-                        <h6 class="m-t-15">A little about Jane</h6>
+                        <h6 class="m-t-15">A little about {{ talentDetail.firstname }}</h6>
                       </div>
                       <div class="col-md-12 m-t-20">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique, 
-                          diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis 
-                          mauris nec lorem. In eget sem accumsan, volutpat sem ac, bibendum purus. 
-                          In ac varius tellus. Morbi lacinia egestas risus, sed consectetur velit ornare vitae. Curabitur sed sollicitudin velit. Nulla tristique varius tincidunt. Donec scelerisque enim ut eros ornare mattis. In hac habitasse platea dictumst. Fusce nunc urna, ultrices a sapien nec, vehicula sagittis lectus. Fusce scelerisque lacinia nisi, sed consectetur purus ullamcorper ut. Fusce scelerisque risus a erat consectetur, eu congue ante efficitur. Integer quis mi consequat, dapibus lectus sit amet, condimentum mi.</p>
+                        <p>{{ talentDetail.description }}</p>
                       </div>
                     </div>
                     <div class="row m-l-20 xs-m-l-0 m-r-10 xs-m-r-0">

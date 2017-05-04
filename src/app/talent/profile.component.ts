@@ -13,6 +13,7 @@ export class ProfileComponent implements OnInit {
   talents: Talent[] =[];
   talentDetails : Talent[] = [];
   talentDetail;
+  sectorsCount;
 
   constructor( private talentService: TalentService,private route: ActivatedRoute) { }
 
@@ -39,6 +40,12 @@ export class ProfileComponent implements OnInit {
     let talentDetailArray = this.talentDetails.filter(t => t.talentid === talent);
     if(talentDetailArray.length > 0) {
       this.talentDetail = talentDetailArray[0];
+      this.sectorsCount = (this.talentDetail.sectors.length);
+      for(let lang of this.talentDetail.languages) {
+        console.log(lang.fluent);
+
+      }
+
     } else {
       this.talentDetail = {
                             "talentid": "5000", 
@@ -63,9 +70,9 @@ export class ProfileComponent implements OnInit {
                               }],
                               "location" : "Dublin",
                               "distance" : "40KM",
-                              "profileimage": "/assets/images/1x.jpg"
+                              "profileimage": "/assets/images/profiles/1x.jpg"
                           };
     }
-    console.log(this.talentDetail);    
+    //console.log(this.talentDetail.languages);    
   }
 }

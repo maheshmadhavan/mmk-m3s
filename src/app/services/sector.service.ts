@@ -15,7 +15,7 @@ export class SectorService {
   }
 
   getSectorsJson() {
-    this.http.get("./src/assets/jsons/sectors.json")
+    this.http.get("assets/jsons/sectors.json")
              .map(
                 (response: Response) => {
                   const sectors: Sector[] = response.json();

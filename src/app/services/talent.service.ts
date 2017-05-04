@@ -15,7 +15,7 @@ export class TalentService {
   }
 
   getTalentsJson() {
-      this.http.get("././src/assets/jsons/talent.json")
+      this.http.get("assets/jsons/talent.json")
               .map(
                   (response: Response) => {
                     const talents: Talent[] = response.json();

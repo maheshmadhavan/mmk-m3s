@@ -13,31 +13,31 @@
       </div>
       <div class="pull-center hidden-md hidden-lg">
         <div class="header-inner">
-          <div class="brand inline"><a href="dashboard.html"><img src="../assets/images/tempal-logo-white.svg" alt="Tempal logo" data-src="../assets/images/tempal-logo-white.svg" data-src-retina="../assets/images/tempal-logo-white.svg" height="40"></a></div>
+          <div class="brand inline"><a href="" [routerLink]="['/talent']"><img src="assets/images/tempal-logo-white.svg" alt="Tempal logo" data-src="assets/images/tempal-logo-white.svg" data-src-retina="assets/images/tempal-logo-white.svg" height="40"></a></div>
         </div>
       </div>
       <!-- RIGHT SIDE -->
       <div class="pull-right full-height visible-sm visible-xs"> 
         <!-- START ACTION BAR -->
-        <div class="header-inner"> <a href="#" class="btn-alerts fa fa-bell-o visible-sm-inline-block visible-xs-inline-block" data-toggle="quickview" data-toggle-element="#quickview"><span class="bubble"></span></a> </div>
+        <div class="header-inner"> <a href="" class="btn-alerts fa fa-bell-o visible-sm-inline-block visible-xs-inline-block" data-toggle="quickview" data-toggle-element="#quickview"><span class="bubble"></span></a> </div>
         <!-- END ACTION BAR --> 
       </div>
     </div>
     <!-- END MOBILE CONTROLS -->
     <div class=" pull-left sm-table hidden-xs hidden-sm">
       <div class="header-inner">
-        <div class="brand inline"><a href="dashboard.html"><img src="../assets/images/tempal-logo-white.svg" alt="Tempal logo" data-src="../assets/images/tempal-logo-white.svg" data-src-retina="../assets/images/tempal-logo-white.svg" height="40"></a></div>
-        <a href="#" class="search-link b-grey b-l p-l-30" data-toggle="search"><i class="icon icon-search"></i>Who are you <span class="bold">looking for?</span></a> </div>
+        <div class="brand inline"><a href="" [routerLink]="['/talent']"><img src="assets/images/tempal-logo-white.svg" alt="Tempal logo" data-src="assets/images/tempal-logo-white.svg" data-src-retina="assets/images/tempal-logo-white.svg" height="40"></a></div>
+        <a href="" [routerLink]="['/talent']" class="search-link b-grey b-l p-l-30" data-toggle="search"><i class="icon icon-search"></i>Who are you <span class="bold">looking for?</span></a> </div>
     </div>
     <div class=" pull-right"> 
       <!-- START User Info-->
       <div class="visible-lg visible-md m-t-15">
         <div class="dropdown pull-right m-l-30" menuDropdown>
-          <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="thumbnail-wrapper d40 circular m-r-15"> <img src="../assets/images/profiles/employer-avatar_small.jpg" alt="" data-src="../assets/images/profiles/employer-avatar_small.jpg" data-src-retina="../assets/images/profiles/employer-avatar_small2x.jpg" width="40" height="40"> </span>
+          <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="thumbnail-wrapper d40 circular m-r-15"> <img src="assets/images/profiles/employer-avatar_small.jpg" alt="" data-src="assets/images/profiles/employer-avatar_small.jpg" data-src-retina="assets/images/profiles/employer-avatar_small2x.jpg" width="40" height="40"> </span>
           <div class="pull-right p-t-10 fs-16 font-heading"> <span class="semi-bold">{{ loggedUser }}</span> <i class="fa fa-angle-down p-l-5"></i> </div>
           </button>
           <ul class="dropdown-menu profile-dropdown m-t-5"  role="menu">  
-            <li class="bg-grey-lighter"> <a (click)="logOut()" class="clearfix"> <img src="../assets/images/icons/logout-555.svg" alt="logout" height="18" class="m-r-10"> Log Out </a> </li>
+            <li class="bg-grey-lighter"> <a (click)="logOut()" class="clearfix"> <img src="assets/images/icons/logout-555.svg" alt="logout" height="18" class="m-r-10"> Log Out </a> </li>
           </ul>
         </div>
       </div>

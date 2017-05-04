@@ -15,7 +15,7 @@ export class BrowseTalentService {
   }
 
   getBrowseTalentsJson() {
-    this.http.get("./src/assets/jsons/browse-talents.json")
+    this.http.get("assets/jsons/browse-talents.json")
              .map(
                 (response: Response) => {
                   const browseTalents: BrowseTalent[] = response.json();

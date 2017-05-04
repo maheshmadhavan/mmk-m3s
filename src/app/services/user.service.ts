@@ -19,7 +19,7 @@ export class UserService implements OnInit {
   }
 
   getUserJson() {
-    this.http.get("./src/assets/jsons/users.json")
+    this.http.get("assets/jsons/users.json")
              .map(
                 (response: Response) => {
                   const users: User[] = response.json();

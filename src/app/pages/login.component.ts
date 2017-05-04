@@ -13,6 +13,7 @@ export class LoginComponent {
   success = true;
   validationError = '';
   passType = "password";
+  showHideLabel = "SHOW"
   //Getting form value and assigning to loginForm	
   @ViewChild('f') loginForm: NgForm; 	
   constructor(private authService : AuthenticationService) { }
@@ -29,9 +30,11 @@ export class LoginComponent {
 }
 showHidePassword(){
   if(this.passType == "text"){
-    this.passType = "password"
+    this.passType = "password";
+    this.showHideLabel = "SHOW";
   }else{
     this.passType = "text";
+    this.showHideLabel = "HIDE";
   }
 
 }

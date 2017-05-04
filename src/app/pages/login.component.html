@@ -23,7 +23,7 @@
             <!-- <p class="help-block" style="color:red;" *ngIf="!email.valid && email.touched">Please enter a valid email id!</p> -->
           </div>          
           <div class="form-group form-group-default">
-            <label>Password <a href="#" class="pull-right" (click) = "showHidePassword()" >show</a></label>
+            <label>Password <a href="#" class="pull-right" (click) = "showHidePassword()" >{{ showHideLabel }}</a></label>
             <div class="controls">
               <input type="{{ passType }}"
               class="form-control"

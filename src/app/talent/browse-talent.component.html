@@ -1,5 +1,5 @@
 <!-- BEGIN INTRO CONTENT SECTION -->
-<section class="bg-white b-b b-grey booking-dates">
+<!-- <section class="bg-white b-b b-grey booking-dates">
   <div class="container">
     <div class="row p-t-0 p-b-0 sm-p-b-0">
       <div class="col-md-6 col-sm-6 col-xs-6 b-r b-grey p-t-25 p-b-15 text-center">
@@ -12,7 +12,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- BEGIN INTRO CONTENT SECTION --> 
 
 <!-- BEGIN FILTERS SECTION -->
@@ -20,13 +20,13 @@
   <div class="container">
     <div class="row p-b-30 sm-p-b-0">
       <div class="col-md-8 col-sm-8 col-xs-12">
-        <h4 class="subtitle xs-text-center">89 Customer Service Contractors</h4>
+        <h4 class="subtitle xs-text-center">{{ browsetalents.length }} Customer Service Contractors</h4>
       </div>
-      <div class="col-md-4 col-sm-4 col-xs-12">
+      <!-- <div class="col-md-4 col-sm-4 col-xs-12">
         <div class="text-right xs-text-center xs-m-t-20">
           <button class="filters-toggle btn btn-outline sm-m-b-30" data-toggle="modal" data-target="#FilterModal"> Filters </button>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -41,30 +41,30 @@
         <div class="panel panel-default talent-panel p-t-40">
           <div class="row">
             <div class="col-md-3 col-sm-3 col-xs-3">
-              <span data-toggle="quickview" data-toggle-element="#quickview">
-                <a href="#quickview-chat" class="btn-circle pull-right open-message" data-toggle="tooltip" data-placement="top" title="message">
+              <!-- <span data-toggle="quickview" data-toggle-element="#quickview">
+                <a href="javascript:;" class="btn-circle pull-right open-message" data-toggle="tooltip" data-placement="top" title="message">
                   <i class="icon icon-bubble" aria-hidden="true"></i>
                 </a>
-              </span>
+              </span> -->
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6">
-              <a href="">
+              <a href="" [routerLink]="['/talent/profile', talent.talentid]">
                 <img src="{{ talent.image_url }}" alt="" class="profile-photo img-circle img-responsive">
               </a> 
             </div>
-            <div class="col-md-3 col-sm-3 col-xs-3"> 
-              <a href="" class="btn-circle pull-left" data-toggle="tooltip" data-placement="top" title="shortlist"><i class="icon icon-bookmark-o"></i></a> 
-            </div>
+            <!-- <div class="col-md-3 col-sm-3 col-xs-3"> 
+              <a href="javascript:;" class="btn-circle pull-left" data-toggle="tooltip" data-placement="top" title="shortlist"><i class="icon icon-bookmark-o"></i></a> 
+            </div> -->
           </div>
           <div class="row">
             <div class="col-md-12 text-center"> 
-              <a href="">
+              <a href="" [routerLink]="['/talent/profile', talent.talentid]">
                 <h5 class="m-t-20 m-b-0">{{ talent.talentname }}</h5>
                 <p class="m-b-10">{{ talent.jobtitle }}</p>
               </a> 
             </div>
           </div>
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-md-12 text-center">
               <div class="talent-star-rating">
                 <i class="fa fa-star"></i>
@@ -74,9 +74,9 @@
                 <i class="fa fa-star"></i>
               </div>
             </div>
-          </div>
-          <div class="row talent-stats m-t-20 p-l-15 p-r-15">
-            <div class="col-md-4 col-sm-4 col-xs-4">
+          </div> -->
+           <div class="row talent-stats m-t-20 p-l-15 p-r-15">
+           <!-- <div class="col-md-4 col-sm-4 col-xs-4">
               <span class="top-row">{{ talent.bookings }}</span>
               <span class="bottom-row hint-text">bookings</span>
             </div>
@@ -89,8 +89,8 @@
             <div class="col-md-4 col-sm-4 col-xs-4">
               <span class="top-row">€{{ talent.averagerate }}</span>
               <span class="bottom-row hint-text">avg. rate</span>
-            </div>
-          </div>
+            </div>-->
+          </div> 
           <div class="row m-t-15">
             <div class="col-md-12">
               <a href="" [routerLink]="['/talent/profile', talent.talentid]" class="btn btn-primary btn-square full-width">View Talent</a>

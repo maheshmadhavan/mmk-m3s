@@ -42,23 +42,23 @@
           <div class="row">
             <div class="col-md-3 col-sm-3 col-xs-3">
               <span data-toggle="quickview" data-toggle-element="#quickview">
-                <a href="#quickview-chat" class="btn-circle pull-right open-message" data-toggle="tooltip" data-placement="top" title="message">
+                <a href="javascript:;" class="btn-circle pull-right open-message" data-toggle="tooltip" data-placement="top" title="message">
                   <i class="icon icon-bubble" aria-hidden="true"></i>
                 </a>
               </span>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6">
-              <a href="">
+              <a href="" [routerLink]="['/talent/profile', talent.talentid]">
                 <img src="{{ talent.image_url }}" alt="" class="profile-photo img-circle img-responsive">
               </a> 
             </div>
             <div class="col-md-3 col-sm-3 col-xs-3"> 
-              <a href="" class="btn-circle pull-left" data-toggle="tooltip" data-placement="top" title="shortlist"><i class="icon icon-bookmark-o"></i></a> 
+              <a href="javascript:;" class="btn-circle pull-left" data-toggle="tooltip" data-placement="top" title="shortlist"><i class="icon icon-bookmark-o"></i></a> 
             </div>
           </div>
           <div class="row">
             <div class="col-md-12 text-center"> 
-              <a href="">
+              <a href="" [routerLink]="['/talent/profile', talent.talentid]">
                 <h5 class="m-t-20 m-b-0">{{ talent.talentname }}</h5>
                 <p class="m-b-10">{{ talent.jobtitle }}</p>
               </a> 

@@ -50,25 +50,24 @@
                           <div class="row">
                             <div class="col-md-12 column b-t b-dashed b-grey p-t-20">
                               <h6>Expertise ({{ sectorsCount }})</h6>
-                              <div class="carousel slide m-t-20" id="expertise-rotate" data-interval="false">
-                                <div class="carousel-inner"> 
+                              <div class="carousel slide m-t-20"  data-interval="false">
+                                <div class="carousel-inner" > 
                                   <!-- START review -->
                                  
-                                    <div class="item active">
-                                      <div class="block-title bold">Sectors</div>
-                                      <div  *ngFor="let sector of talentDetail.sectors;let i=index;">
-                                      <p class="" >{{ sector }}</p>
-                                      </div>
-                                      <div class="block-title bold">Job Title</div>
-                                      <p class="">{{ talentDetail.jobtitle }}</p>
-                                      <div class="block-title bold">Experience</div>
-                                      <p class="">{{ talentDetail.experience }}</p>
-                                      <div class="clearfix"></div>
-                                    </div>
+                                    
+                                    <div class="item" *ngFor="let exp of talentDetail.expertise;">
+                                    <div class="block-title">Sector</div>
+                                    <p class="semi-bold">{{ exp.sector }}</p>
+                                    <div class="block-title">Job Title</div>
+                                    <p class="semi-bold">{{ exp.jobtitle }}</p>
+                                    <div class="block-title">Experience</div>
+                                    <p class="semi-bold">{{ exp.experience }}</p>
+                                    <div class="clearfix"></div>
+                                  </div>
                                   <!-- END review --> 
                                 </div>
                               </div>
-                              <div class="text-center"> <a class="left" href="javascript:;" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right" href="javascript:;" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                              <div class="text-center"> <a class="left" href="#" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right" href="#" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
                                 <div class="clearfix"> </div>
                               </div>
                             </div>
@@ -78,25 +77,20 @@
                       </div>
                       <div class="col-md-12 m-t-20">
                         <div class="row">
-                          <div class="col-md-12 column b-t sm-b-t sm-b-b b-dashed b-grey p-t-20 sm-p-b-20">
+                          <div class="col-md-12 column b-t sm-b-t sm-b-b b-dashed b-grey p-t-20 sm-p-b-20" >
                             <h6>Languages</h6>
-                            <div class="m-t-20 block-title">Native</div>
-                            <ul class="list-inline m-t-10">
-                              <li>
-                                <div class="language-tag xs-m-b-10">English</div>
+                            <div class="m-t-20 block-title" *ngIf = "native">Native</div>
+                            <ul class="list-inline m-t-10" >
+                              <li *ngFor="let n of native;">
+                                <div class="language-tag xs-m-b-10"> {{ n }}</div>
                               </li>
-                              <li>
-                                <div class="language-tag xs-m-b-10">German</div>
-                              </li>
+                             
                             </ul>
-                            <div class="m-t-20 block-title">Fluent</div>
-                            <ul class="list-inline m-t-10">
-                              <li>
-                                <div class="language-tag xs-m-b-10">Spanish</div>
-                              </li>
-                              <li>
-                                <div class="language-tag">French</div>
-                              </li>
+                            <div class="m-t-20 block-title" *ngIf = "fluent">Fluent</div>
+                            <ul class="list-inline m-t-10" >
+                              <li *ngFor="let f of fluent;">
+                                <div class="language-tag xs-m-b-10">{{ f }}</div>
+                              </li>                             
                             </ul>
                           </div>
                         </div>
@@ -136,7 +130,11 @@
                       <div class="col-md-12 m-t-20">
                         <div style="height:350px;width:100%;max-width:100%;list-style:none; transition: none;overflow:hidden;">
                           <div id="embedded-map-canvas" style="height:100%; width:100%;max-width:100%;">
-                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Hume+House,+Pembroke+Road,+Ballsbridge,+Ireland&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
+                            <iframe 
+                            style="height:100%;width:100%;border:0;"
+                             frameborder="0"
+                              src="https://www.google.com/maps/embed/v1/place?q=Hume+House,+Pembroke+Road,+Ballsbridge,+Ireland&key=AIzaSyAjmNj0XZxULyuu35UuvFbi9NL7zM4FXr0">
+                              </iframe>
                           </div>
                         </div>
                       </div>

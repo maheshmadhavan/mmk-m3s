@@ -14,6 +14,9 @@ export class ProfileComponent implements OnInit {
   talentDetails : Talent[] = [];
   talentDetail;
   sectorsCount;
+  languagesArray;
+  native;
+  fluent;
 
   constructor( private talentService: TalentService,private route: ActivatedRoute) { }
 
@@ -40,11 +43,13 @@ export class ProfileComponent implements OnInit {
     let talentDetailArray = this.talentDetails.filter(t => t.talentid === talent);
     if(talentDetailArray.length > 0) {
       this.talentDetail = talentDetailArray[0];
-      this.sectorsCount = (this.talentDetail.sectors.length);
-      for(let lang of this.talentDetail.languages) {
-        console.log(lang.fluent);
-
+      this.sectorsCount = (this.talentDetail.expertise.length);
+      for(let lang of this.talentDetail.languages) {          
+         this.languagesArray = lang;
       }
+      this.native = this.languagesArray.native;
+      this.fluent = this.languagesArray.fluent;
+     
 
     } else {
       this.talentDetail = {
@@ -72,7 +77,6 @@ export class ProfileComponent implements OnInit {
                               "distance" : "40KM",
                               "profileimage": "/assets/images/profiles/1x.jpg"
                           };
-    }
-    //console.log(this.talentDetail.languages);    
+   }
   }
 }

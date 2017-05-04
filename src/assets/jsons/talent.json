@@ -5,23 +5,30 @@
       "lastname": "candidate", 
       "email": "testcandidate@premiergp.com", 
       "phonenumber": "123456789",
-      "description": "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ", 
-      "usertype": "talent", 
-      "shift": "General", 
-      "status": "Active",
+      "address" : "Hume+House,+Pembroke+Road,+Ballsbridge,+Ireland",
+      "description": "I have spent the last six years developing my skills as a customer service manager for Megacompany Inc., where I have won several performance awards and been promoted twice. I love managing teams and solving customer problems.", 
       "jobtitle": "Customer Service Representative",
-      "sectors": [
-            "Customer Service",
-            "Office Support",
-            "Call Centre"
-        ],
-        "experience": "Some - A few experience",
+      "expertise" : [{
+          "sector":"Customer Service", 
+          "jobtitle":"Customer Service Representative",
+          "experience":"Some - A few experience"  
+       },
+       {
+          "sector":"Office Support", 
+          "jobtitle":"Office Support Manager",
+          "experience":"Little - A few experience"  
+       },
+       {
+          "sector":"Call Centre", 
+          "jobtitle":"Call Centre Executive",
+          "experience":"Some - A few experience"  
+       }],
         "languages" : [{
-            "Native": ["German","English"],
-            "Fluent": ["French","English"]
+            "native": ["German"],
+            "fluent": ["French","English"]
         }],
         "location" : "Dublin",
-        "distance" : "40KM",
+        "distance" : "20KM",
         "profileimage": "/assets/images/talents/default.jpg"
     },
     {
@@ -30,23 +37,29 @@
       "lastname": "candidate1", 
       "email": "testcandidate1@premiergp.com", 
       "phonenumber": "123456789",
-      "description": "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ", 
-      "usertype": "talent", 
-      "shift": "General", 
-      "status": "Active",
-      "jobtitle": "Customer Service Representative",
-      "sectors": [
-            "Customer Service",
-            "Office Support",
-            "Call Centre"
-        ],
-        "experience": "Some - A few experience",
+      "description": "My first job was as an administrative assistant for Macy’s in Fort Lauderdale, Florida. I learned a great deal in that role that served me well over the next 12 years. At the time, I wasn’t sure about my career path, so I next took a position selling real estate. It only lasted for six months, but I sure enjoyed it.", 
+      "jobtitle": "System Administrator",
+      "expertise" : [{
+          "sector":"Customer Service", 
+          "jobtitle":"Customer Service Representative",
+          "experience":"Some - A few experience"  
+       },
+       {
+          "sector":"Office Support", 
+          "jobtitle":"Office Support Manager",
+          "experience":"Little - A few experience"  
+       },
+       {
+          "sector":"Call Centre", 
+          "jobtitle":"Call Centre Executive",
+          "experience":"Some - A few experience"  
+       }],
         "languages" : [{
-            "Native": ["German","English"],
-            "Fluent": ["French","English"]
+            "native": ["German","English"],
+            "fluent": ["French"]
         }],
-        "location" : "Dublin",
-        "distance" : "40KM",
+        "location" : "Australia",
+        "distance" : "30KM",
         "profileimage": "/assets/images/talents/demo-talent.jpg"
     },
     {
@@ -55,23 +68,29 @@
       "lastname": "candidate2", 
       "email": "testcandidate2@premiergp.com", 
       "phonenumber": "123456789",
-      "description": "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ", 
-      "usertype": "talent", 
-      "shift": "General", 
-      "status": "Active",
-      "jobtitle": "Customer Service Representative",
-      "sectors": [
-            "Customer Service",
-            "Office Support",
-            "Call Centre"
-        ],
-        "experience": "Some - A few experience",
+      "description": "I have more than five years of experience as a technical project manager at top Wall Street companies. Most recently, I led the development of an award-winning new trading platform. I’m a person who thrives in a fast-paced environment so right now I’m looking for an opportunity to apply my technical exp and my creative problem solving skills at an innovative software company like this one.", 
+      "jobtitle": "Technical Support",
+      "expertise" : [{
+          "sector":"Customer Service", 
+          "jobtitle":"Customer Service Representative",
+          "experience":"Some - A few experience"  
+       },
+       {
+          "sector":"Office Support", 
+          "jobtitle":"Office Support Manager",
+          "experience":"Little - A few experience"  
+       },
+       {
+          "sector":"Call Centre", 
+          "jobtitle":"Call Centre Executive",
+          "experience":"Some - A few experience"  
+       }],
         "languages" : [{
-            "Native": ["German","English"],
-            "Fluent": ["French","English"]
+            "native": ["English"],
+            "fluent": ["French"]
         }],
         "location" : "Dublin",
-        "distance" : "40KM",
+        "distance" : "30KM",
         "profileimage": "/assets/images/talents/dianne-johnson.jpg"
     },
    {
@@ -81,22 +100,28 @@
       "email": "testcandidate3@premiergp.com", 
       "phonenumber": "123456789",
       "description": "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ", 
-      "usertype": "talent", 
-      "shift": "General", 
-      "status": "Active",
       "jobtitle": "Customer Service Representative",
-      "sectors": [
-            "Customer Service",
-            "Office Support",
-            "Call Centre"
-        ],
-        "experience": "Some - A few experience",
+      "expertise" : [{
+          "sector":"Customer Service", 
+          "jobtitle":"Customer Service Representative",
+          "experience":"Some - A few experience"  
+       },
+       {
+          "sector":"Office Support", 
+          "jobtitle":"Office Support Manager",
+          "experience":"Little - A few experience"  
+       },
+       {
+          "sector":"Call Centre", 
+          "jobtitle":"Call Centre Executive",
+          "experience":"Some - A few experience"  
+       }],
         "languages" : [{
-            "Native": ["German","English"],
-            "Fluent": ["French","English"]
+            "native": ["Spanish"],
+            "fluent": ["French","English"]
         }],
-        "location" : "Dublin",
-        "distance" : "40KM",
+        "location" : "London",
+        "distance" : "10KM",
         "profileimage": "/assets/images/talents/jane-kelly.jpg"
     },
   {
@@ -106,16 +131,8 @@
       "email": "testcandidate4@premiergp.com", 
       "phonenumber": "123456789",
       "description": "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ", 
-      "usertype": "talent", 
-      "shift": "General", 
-      "status": "Active",
-      "jobtitle": "Customer Service Representative",
-      "sectors": [
-            "Customer Service",
-            "Office Support",
-            "Call Centre"
-        ],
-        "expertise" : [{
+      "jobtitle": "Customer Service Representative",     
+      "expertise" : [{
           "sector":"Customer Service", 
           "jobtitle":"Customer Service Representative",
           "experience":"Some - A few experience"  
@@ -145,23 +162,29 @@
       "email": "testcandidate5@premiergp.com", 
       "phonenumber": "123456789",
       "description": "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ", 
-      "usertype": "talent", 
-      "shift": "General", 
-      "status": "Active",
       "jobtitle": "Customer Service Representative",
-      "sectors": [
-            "Customer Service",
-            "Office Support",
-            "Call Centre"
-        ],
-        "experience": "Some - A few experience",
+      "expertise" : [{
+          "sector":"Customer Service", 
+          "jobtitle":"Customer Service Representative",
+          "experience":"Some - A few experience"  
+       },
+       {
+          "sector":"Office Support", 
+          "jobtitle":"Office Support Manager",
+          "experience":"Little - A few experience"  
+       },
+       {
+          "sector":"Call Centre", 
+          "jobtitle":"Call Centre Executive",
+          "experience":"Some - A few experience"  
+       }],
         "languages" : [{
-            "Native": ["German","English"],
-            "Fluent": ["French","English"]
+            "native": ["German","English"],
+            "fluent": ["French","English"]
         }],
         "location" : "Dublin",
         "distance" : "40KM",
         "profileimage": "/assets/images/talents/mark-craddock.jpg"
-    },
+    }
   
 ]

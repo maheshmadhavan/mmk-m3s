@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import {googlemaps} from 'googlemaps';
 
 import { Talent } from '../models/talent.model';
 import { TalentService } from '../services/talent.service'; 
@@ -18,6 +19,14 @@ export class ProfileComponent implements OnInit {
   native;
   fluent;
   activeItem: number = 0;
+  options;
+  map;
+  places;
+  apiError;
+  apiStatus;
+  marker;
+  place = {};
+  result;
 
   constructor( private talentService: TalentService,private route: ActivatedRoute) { }
 
@@ -37,7 +46,17 @@ export class ProfileComponent implements OnInit {
             this.getTalent(this.passedTalent);
           }
         );
-    
+
+    this.options = {
+        center: new google.maps.LatLng(this.talentDetail.locationlat, this.talentDetail.locationlong),
+        zoom: 13,
+        disableDefaultUI: true    
+    }
+
+    this.map = new google.maps.Map(
+        document.getElementById("map"), this.options
+    );
+    this.places = new google.maps.places.PlacesService(this.map);
   }
 
   getTalent(talent:string){
@@ -59,7 +78,7 @@ export class ProfileComponent implements OnInit {
                             "lastname": "candidate", 
                             "email": "testcandidate@premiergp.com", 
                             "phonenumber": "123456789",
-                            "address" : "Hume+House,+Pembroke+Road,+Ballsbridge,+Ireland",
+                            "address" : "Hume House,Pembroke Road,Ballsbridge,Ireland",
                             "description": "I have spent the last six years developing my skills as a customer service manager for Megacompany Inc., where I have won several performance awards and been promoted twice. I love managing teams and solving customer problems.", 
                             "jobtitle": "Customer Service Representative",
                             "expertise" : [{
@@ -83,9 +102,11 @@ export class ProfileComponent implements OnInit {
                               }],
                               "location" : "Dublin",
                               "distance" : "20KM",
-                              "profileimage": "/assets/images/talents/default.jpg"
+                              "profileimage": "/assets/images/talents/default.jpg",
+                              "locationlat" : "53.331038",
+                              "locationlong" : "-6.233250"
                           };
-   }
+   }   
   }
 
   viewPrevious(newValue: number) {
@@ -95,6 +116,10 @@ export class ProfileComponent implements OnInit {
     else {
       this.activeItem = newValue;
     }
+  }
+
+  getLatLong(address) {
+    //https://maps.googleapis.com/maps/api/geocode/json?address=""&key=AIzaSyAFH_c1BY4jd9rdXLwikfZhmQkCxCtVIBw&
   }
 
   viewNext(newValue: number) {

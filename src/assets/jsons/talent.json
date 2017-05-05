@@ -1,190 +1,168 @@
 [
-    {
-      "talentid": "5000", 
-      "firstname": "Test", 
-      "lastname": "candidate", 
-      "email": "testcandidate@premiergp.com", 
-      "phonenumber": "123456789",
-      "address" : "Hume+House,+Pembroke+Road,+Ballsbridge,+Ireland",
-      "description": "I have spent the last six years developing my skills as a customer service manager for Megacompany Inc., where I have won several performance awards and been promoted twice. I love managing teams and solving customer problems.", 
-      "jobtitle": "Customer Service Representative",
-      "expertise" : [{
-          "sector":"Customer Service", 
-          "jobtitle":"Customer Service Representative",
-          "experience":"Some - A few experience"  
-       },
-       {
-          "sector":"Office Support", 
-          "jobtitle":"Office Support Manager",
-          "experience":"Little - A few experience"  
-       },
-       {
-          "sector":"Call Centre", 
-          "jobtitle":"Call Centre Executive",
-          "experience":"Some - A few experience"  
-       }],
-        "languages" : [{
-            "native": ["German"],
-            "fluent": ["French","English"]
-        }],
-        "location" : "Dublin",
-        "distance" : "20KM",
-        "profileimage": "/assets/images/talents/default.jpg"
-    },
-    {
-      "talentid": "5001", 
-      "firstname": "Test1", 
-      "lastname": "candidate1", 
-      "email": "testcandidate1@premiergp.com", 
-      "phonenumber": "123456789",
-      "description": "My first job was as an administrative assistant for Macy’s in Fort Lauderdale, Florida. I learned a great deal in that role that served me well over the next 12 years. At the time, I wasn’t sure about my career path, so I next took a position selling real estate. It only lasted for six months, but I sure enjoyed it.", 
-      "jobtitle": "System Administrator",
-      "expertise" : [{
-          "sector":"Customer Service", 
-          "jobtitle":"Customer Service Representative",
-          "experience":"Some - A few experience"  
-       },
-       {
-          "sector":"Office Support", 
-          "jobtitle":"Office Support Manager",
-          "experience":"Little - A few experience"  
-       },
-       {
-          "sector":"Call Centre", 
-          "jobtitle":"Call Centre Executive",
-          "experience":"Some - A few experience"  
-       }],
-        "languages" : [{
-            "native": ["German","English"],
-            "fluent": ["French"]
-        }],
-        "location" : "Australia",
-        "distance" : "30KM",
-        "profileimage": "/assets/images/talents/demo-talent.jpg"
-    },
-    {
-      "talentid": "5002", 
-      "firstname": "Test2", 
-      "lastname": "candidate2", 
-      "email": "testcandidate2@premiergp.com", 
-      "phonenumber": "123456789",
-      "description": "I have more than five years of experience as a technical project manager at top Wall Street companies. Most recently, I led the development of an award-winning new trading platform. I’m a person who thrives in a fast-paced environment so right now I’m looking for an opportunity to apply my technical exp and my creative problem solving skills at an innovative software company like this one.", 
-      "jobtitle": "Technical Support",
-      "expertise" : [{
-          "sector":"Customer Service", 
-          "jobtitle":"Customer Service Representative",
-          "experience":"Some - A few experience"  
-       },
-       {
-          "sector":"Office Support", 
-          "jobtitle":"Office Support Manager",
-          "experience":"Little - A few experience"  
-       },
-       {
-          "sector":"Call Centre", 
-          "jobtitle":"Call Centre Executive",
-          "experience":"Some - A few experience"  
-       }],
-        "languages" : [{
-            "native": ["English"],
-            "fluent": ["French"]
-        }],
-        "location" : "Dublin",
-        "distance" : "30KM",
-        "profileimage": "/assets/images/talents/dianne-johnson.jpg"
-    },
-   {
-      "talentid": "5003", 
-      "firstname": "Test3", 
-      "lastname": "candidate3", 
-      "email": "testcandidate3@premiergp.com", 
-      "phonenumber": "123456789",
-      "description": "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ", 
-      "jobtitle": "Customer Service Representative",
-      "expertise" : [{
-          "sector":"Customer Service", 
-          "jobtitle":"Customer Service Representative",
-          "experience":"Some - A few experience"  
-       },
-       {
-          "sector":"Office Support", 
-          "jobtitle":"Office Support Manager",
-          "experience":"Little - A few experience"  
-       },
-       {
-          "sector":"Call Centre", 
-          "jobtitle":"Call Centre Executive",
-          "experience":"Some - A few experience"  
-       }],
-        "languages" : [{
-            "native": ["Spanish"],
-            "fluent": ["French","English"]
-        }],
-        "location" : "London",
-        "distance" : "10KM",
-        "profileimage": "/assets/images/talents/jane-kelly.jpg"
-    },
   {
-      "talentid": "5004", 
-      "firstname": "Test4", 
-      "lastname": "candidate4", 
-      "email": "testcandidate4@premiergp.com", 
-      "phonenumber": "123456789",
-      "description": "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ", 
-      "jobtitle": "Customer Service Representative",     
-      "expertise" : [{
-          "sector":"Customer Service", 
-          "jobtitle":"Customer Service Representative",
-          "experience":"Some - A few experience"  
-       },
-       {
-          "sector":"Office Support", 
-          "jobtitle":"Office Support Manager",
-          "experience":"Little - A few experience"  
-       },
-       {
-          "sector":"Call Centre", 
-          "jobtitle":"Call Centre Executive",
-          "experience":"Some - A few experience"  
-       }],
-        "languages" : [{
-            "native": ["German","English"],
-            "fluent": ["French","English"]
-        }],
-        "location" : "Dublin",
-        "distance" : "40KM",
-        "profileimage": "/assets/images/talents/lakshmikant-v.jpg"
-    },
+    "talentid": "5001", 
+    "firstname": "Jane", 
+    "lastname": "Kelly", 
+    "email": "jkelly@premiergp.com", 
+    "phonenumber": "123456789",
+    "address" : "Hume House,Pembroke Road,Ballsbridge,Ireland",
+    "description": "I have spent the last six years developing my skills as a customer service manager for Megacompany Inc., where I have won several performance awards and been promoted twice. I love managing teams and solving customer problems.", 
+    "jobtitle": "Customer Service Representative",
+    "expertise" : [{
+        "sector":"Customer Service", 
+        "jobtitle":"Customer Service Representative",
+        "experience":"Some - A few experience"  
+     },
+     {
+        "sector":"Office Support", 
+        "jobtitle":"Office Support Manager",
+        "experience":"Little - A few experience"  
+     },
+     {
+        "sector":"Call Centre", 
+        "jobtitle":"Call Centre Executive",
+        "experience":"Some - A few experience"  
+     }],
+      "languages" : [{
+          "native": ["German"],
+          "fluent": ["French","English"]
+      }],
+      "location" : "Dublin",
+      "distance" : "20KM",
+      "profileimage": "assets\/images\/talents\/jane-kelly.jpg",
+      "locationlat" : "53.331038",
+      "locationlong" : "-6.233250"
+  },
   {
-      "talentid": "5005", 
-      "firstname": "Test5", 
-      "lastname": "candidate5", 
-      "email": "testcandidate5@premiergp.com", 
-      "phonenumber": "123456789",
-      "description": "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ", 
-      "jobtitle": "Customer Service Representative",
-      "expertise" : [{
-          "sector":"Customer Service", 
-          "jobtitle":"Customer Service Representative",
-          "experience":"Some - A few experience"  
-       },
-       {
-          "sector":"Office Support", 
-          "jobtitle":"Office Support Manager",
-          "experience":"Little - A few experience"  
-       },
-       {
-          "sector":"Call Centre", 
-          "jobtitle":"Call Centre Executive",
-          "experience":"Some - A few experience"  
-       }],
-        "languages" : [{
-            "native": ["German","English"],
-            "fluent": ["French","English"]
-        }],
-        "location" : "Dublin",
-        "distance" : "40KM",
-        "profileimage": "/assets/images/talents/mark-craddock.jpg"
-    }
-  
+    "talentid": "5002", 
+    "firstname": "Mark", 
+    "lastname": "Craddock", 
+    "email": "mcraddock@premiergp.com", 
+    "phonenumber": "123456789",
+    "address" : "Sydney, Australia",
+    "description": "My first job was as an administrative assistant for Macy’s in Fort Lauderdale, Florida. I learned a great deal in that role that served me well over the next 12 years. At the time, I wasn’t sure about my career path, so I next took a position selling real estate. It only lasted for six months, but I sure enjoyed it.", 
+    "jobtitle": "System Administrator",
+    "expertise" : [{
+        "sector":"Customer Service", 
+        "jobtitle":"Customer Service Representative",
+        "experience":"Some - A few experience"  
+     },
+     {
+        "sector":"Office Support", 
+        "jobtitle":"Office Support Manager",
+        "experience":"Little - A few experience"  
+     },
+     {
+        "sector":"Call Centre", 
+        "jobtitle":"Call Centre Executive",
+        "experience":"Some - A few experience"  
+     }],
+      "languages" : [{
+          "native": ["German","English"],
+          "fluent": ["French"]
+      }],
+      "location" : "Australia",
+      "distance" : "30KM",
+      "profileimage": "assets\/images\/talents\/mark-craddock.jpg",
+      "locationlat" : "-33.868820",
+      "locationlong" : "151.209296"
+  },
+  {
+    "talentid": "5003", 
+    "firstname": "Dianne", 
+    "lastname": "Johnson", 
+    "email": "djohnson@premiergp.com", 
+    "phonenumber": "123456789",
+    "address" : "Cork, Ireland",
+    "description": "I have more than five years of experience as a technical project manager at top Wall Street companies. Most recently, I led the development of an award-winning new trading platform. I’m a person who thrives in a fast-paced environment so right now I’m looking for an opportunity to apply my technical exp and my creative problem solving skills at an innovative software company like this one.", 
+    "jobtitle": "Technical Support",
+    "expertise" : [{
+        "sector":"Customer Service", 
+        "jobtitle":"Customer Service Representative",
+        "experience":"Some - A few experience"  
+     },
+     {
+        "sector":"Office Support", 
+        "jobtitle":"Office Support Manager",
+        "experience":"Little - A few experience"  
+     },
+     {
+        "sector":"Call Centre", 
+        "jobtitle":"Call Centre Executive",
+        "experience":"Some - A few experience"  
+     }],
+      "languages" : [{
+          "native": ["English"],
+          "fluent": ["French"]
+      }],
+      "location" : "Cork",
+      "distance" : "30KM",
+      "profileimage": "assets\/images\/talents\/dianne-johnson.jpg",
+      "locationlat" : "51.896892",
+      "locationlong" : "-8.486316"
+  },
+  {
+    "talentid": "5004", 
+    "firstname": "Demo", 
+    "lastname": "Talent", 
+    "email": "dtalent@premiergp.com", 
+    "phonenumber": "123456789",
+    "address" : "London, UK",
+    "description": "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ", 
+    "jobtitle": "Customer Service Representative",
+    "expertise" : [{
+        "sector":"Customer Service", 
+        "jobtitle":"Customer Service Representative",
+        "experience":"Some - A few experience"  
+     },
+     {
+        "sector":"Office Support", 
+        "jobtitle":"Office Support Manager",
+        "experience":"Little - A few experience"  
+     },
+     {
+        "sector":"Call Centre", 
+        "jobtitle":"Call Centre Executive",
+        "experience":"Some - A few experience"  
+     }],
+      "languages" : [{
+          "native": ["Spanish"],
+          "fluent": ["French","English"]
+      }],
+      "location" : "London",
+      "distance" : "10KM",
+      "profileimage": "assets\/images\/talents\/demo-talent.jpg",
+      "locationlat" : "51.507351",
+      "locationlong" : "-0.127758"
+  },
+  {
+    "talentid": "5123", 
+    "firstname": "Lakshmikanth", 
+    "lastname": "V", 
+    "email": "lvm@premiergp.com", 
+    "phonenumber": "123456789",
+    "address" : "Mahe, India",
+    "description": "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ", 
+    "jobtitle": "Customer Service Representative",
+    "expertise" : [{
+        "sector":"Customer Service", 
+        "jobtitle":"Customer Service Representative",
+        "experience":"Some - A few experience"  
+     },
+     {
+        "sector":"Office Support", 
+        "jobtitle":"Office Support Manager",
+        "experience":"Little - A few experience"  
+     }
+    ],
+    "languages" : [{
+        "native": ["German","English"],
+        "fluent": ["French","English"]
+    }],
+    "location" : "Mahe",
+    "distance" : "40KM",
+    "profileimage": "assets\/images\/talents\/lakshmikant-v.jpg",
+    "locationlat" : "11.702716",
+    "locationlong" : "75.536404"
+  }  
 ]

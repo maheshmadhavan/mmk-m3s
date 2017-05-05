@@ -15,28 +15,28 @@ export class TalentService {
   }
 
   getTalentsJson() {
-      this.http.get("assets/jsons/talent.json")
-              .map(
-                  (response: Response) => {
-                    const talents: Talent[] = response.json();
-                    for(let talent of talents) {
-                      if(!talent) {
-                       console.log(talent);
-                      }
+    this.http.get("assets/jsons/talent.json")
+            .map(
+                (response: Response) => {
+                  const talents: Talent[] = response.json();
+                  for(let talent of talents) {
+                    if(!talent) {
+                     console.log(talent);
                     }
-                    return talents;
                   }
-                )
-              .subscribe(
-                (talents: Talent[]) => {                 
-                  this.setTalents(talents);
-                });
-    }
+                  return talents;
+                }
+              )
+            .subscribe(
+              (talents: Talent[]) => {                 
+                this.setTalents(talents);
+              });
+  }
+
   setTalents(talents: Talent[]) {
     this.talents = talents;
     this.talentChanged.next(this.talents.slice());
   }
-
 
   getAllTalents() {  
     return this.talents.slice(); 

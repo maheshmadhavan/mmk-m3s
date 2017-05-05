@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {googlemaps} from 'googlemaps';
+import { googlemaps } from 'googlemaps';
 
 import { Talent } from '../models/talent.model';
 import { TalentService } from '../services/talent.service'; 
 
 @Component({
-  templateUrl: './profile.component.html'
+  templateUrl: './profile.component.html',
+  styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit { 
   talentId;
@@ -27,6 +28,7 @@ export class ProfileComponent implements OnInit {
   marker;
   place = {};
   result;
+  markers = [];
 
   constructor( private talentService: TalentService,private route: ActivatedRoute) { }
 
@@ -57,6 +59,7 @@ export class ProfileComponent implements OnInit {
         document.getElementById("map"), this.options
     );
     this.places = new google.maps.places.PlacesService(this.map);
+    this.createMarker();
   }
 
   getTalent(talent:string){
@@ -109,6 +112,22 @@ export class ProfileComponent implements OnInit {
    }   
   }
 
+  createMarker() {
+    this.marker = new google.maps.Marker({
+            map: this.map,
+            position: new google.maps.LatLng(this.talentDetail.locationlat, this.talentDetail.locationlong),
+            title: this.talentDetail.location
+        });
+        this.marker.content = '<div class="infoWindowContent">' + this.talentDetail.address + '</div>';
+        
+        // google.maps.event.addListener(this.marker, 'click', function(){
+        //     infoWindow.setContent('<h2>' + marker.title + '</h2>' + marker.content);
+        //     infoWindow.open($scope.map, marker);
+        // });
+        
+       this.markers.push(this.marker);
+  }
+
   viewPrevious(newValue: number) {
     if (this.activeItem === newValue || newValue < 0) {
       this.activeItem = 0;
@@ -118,12 +137,8 @@ export class ProfileComponent implements OnInit {
     }
   }
 
-  getLatLong(address) {
-    //https://maps.googleapis.com/maps/api/geocode/json?address=""&key=AIzaSyAFH_c1BY4jd9rdXLwikfZhmQkCxCtVIBw&
-  }
-
   viewNext(newValue: number) {
-    if (this.activeItem === newValue || newValue >= this.sectorsCount) {
+    if (this.activeItem === newValue || newValue > (this.talentDetail.expertise.length-1)) {
       this.activeItem = 0;
     }
     else {

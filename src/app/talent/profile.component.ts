@@ -48,18 +48,6 @@ export class ProfileComponent implements OnInit {
             this.getTalent(this.passedTalent);
           }
         );
-
-    this.options = {
-        center: new google.maps.LatLng(this.talentDetail.locationlat, this.talentDetail.locationlong),
-        zoom: 13,
-        disableDefaultUI: true    
-    }
-
-    this.map = new google.maps.Map(
-        document.getElementById("map"), this.options
-    );
-    this.places = new google.maps.places.PlacesService(this.map);
-    this.createMarker();
   }
 
   getTalent(talent:string){
@@ -110,6 +98,18 @@ export class ProfileComponent implements OnInit {
                               "locationlong" : "-6.233250"
                           };
    }   
+
+   this.options = {
+        center: new google.maps.LatLng(this.talentDetail.locationlat, this.talentDetail.locationlong),
+        zoom: 13,
+        disableDefaultUI: true    
+    }
+
+    this.map = new google.maps.Map(
+        document.getElementById("map"), this.options
+    );
+    this.places = new google.maps.places.PlacesService(this.map);
+    this.createMarker();
   }
 
   createMarker() {

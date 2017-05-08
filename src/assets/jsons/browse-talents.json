@@ -7,17 +7,27 @@
 		"rating" : "4",
 		"image_url": "assets\/images\/talents\/jane-kelly.jpg",
 		"bookings" : "10",
-		"averagerate" : "15"
+		"averagerate" : "15",
+		"requirementmatching" : "4",
+		"educationrating" : "3",
+		"workrating" : "5",
+		"salaryrating" : "3",
+		"availabilityrating" : "5"
 	},
 	{
 		"id" : "2",
 		"talentid" : "5002",
 		"talentname" : "Mark Craddock",
 		"jobtitle" : "Customer Service Representative",
-		"rating" : "4.5",
+		"rating" : "5",
 		"image_url": "assets\/images\/talents\/mark-craddock.jpg",
 		"bookings" : "12",
-		"averagerate" : "25"
+		"averagerate" : "25",
+		"requirementmatching" : "3",
+		"educationrating" : "4",
+		"workrating" : "5",
+		"salaryrating" : "4",
+		"availabilityrating" : "5"
 	},
 	{
 		"id" : "3",
@@ -27,17 +37,27 @@
 		"rating" : "3",
 		"image_url": "assets\/images\/talents\/dianne-johnson.jpg",
 		"bookings" : "5",
-		"averagerate" : "10"
+		"averagerate" : "10",
+		"requirementmatching" : "5",
+		"educationrating" : "5",
+		"workrating" : "4",
+		"salaryrating" : "5",
+		"availabilityrating" : "4"
 	},
 	{
 		"id" : "4",
 		"talentid" : "5004",
 		"talentname" : "Demo Talent",
 		"jobtitle" : "Customer Service Representative",
-		"rating" : "3.5",
+		"rating" : "3",
 		"image_url": "assets\/images\/talents\/demo-talent.jpg",
 		"bookings" : "8",
-		"averagerate" : "12"
+		"averagerate" : "12",
+		"requirementmatching" : "4",
+		"educationrating" : "5",
+		"workrating" : "5",
+		"salaryrating" : "4",
+		"availabilityrating" : "3"
 	},
 	{
 		"id" : "5",
@@ -47,6 +67,11 @@
 		"rating" : "4",
 		"image_url": "assets\/images\/talents\/lakshmikant-v.jpg",
 		"bookings" : "15",
-		"averagerate" : "25"
+		"averagerate" : "25",
+		"requirementmatching" : "5",
+		"educationrating" : "4",
+		"workrating" : "5",
+		"salaryrating" : "4",
+		"availabilityrating" : "5"
 	}
 ]

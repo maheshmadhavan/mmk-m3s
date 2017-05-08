@@ -64,17 +64,61 @@
               </a> 
             </div>
           </div>
-          <!-- <div class="row">
+          <div class="row">
             <div class="col-md-12 text-center">
+              <div class="col-md-8 col-sm-6 col-xs-6">
+                <span class="top-row">Match to Requirements</span>
+              </div>
               <div class="talent-star-rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+                <i class="fa fa-star" *ngFor="let fullStar of range(talent.requirementmatching)"></i>
+                <i class="fa fa-star-o" *ngFor="let fullStar of range(5 - talent.requirementmatching)"></i>
               </div>
             </div>
-          </div> -->
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="col-md-8 col-sm-6 col-xs-6">
+                <span class="top-row">Education</span>
+              </div>
+              <div class="talent-star-rating">
+                <i class="fa fa-star" *ngFor="let fullStar of range(talent.educationrating)"></i>
+                <i class="fa fa-star-o" *ngFor="let fullStar of range(5 - talent.educationrating)"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="col-md-8 col-sm-6 col-xs-6">
+                <span class="top-row">Work History</span>
+              </div>
+              <div class="talent-star-rating">
+                <i class="fa fa-star" *ngFor="let fullStar of range(talent.workrating)"></i>
+                <i class="fa fa-star-o" *ngFor="let fullStar of range(5 - talent.workrating)"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="col-md-8 col-sm-6 col-xs-6">
+                <span class="top-row">Salary</span>
+              </div>
+              <div class="talent-star-rating">
+                <i class="fa fa-star" *ngFor="let fullStar of range(talent.salaryrating)"></i>
+                <i class="fa fa-star-o" *ngFor="let fullStar of range(5 - talent.salaryrating)"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="col-md-8 col-sm-6 col-xs-6">
+                <span class="top-row">Availability</span>
+              </div>
+              <div class="talent-star-rating">
+                <i class="fa fa-star" *ngFor="let fullStar of range(talent.availabilityrating)"></i>
+                <i class="fa fa-star-o" *ngFor="let fullStar of range(5 - talent.availabilityrating)"></i>
+              </div>
+            </div>
+          </div>
            <div class="row talent-stats m-t-20 p-l-15 p-r-15">
            <!-- <div class="col-md-4 col-sm-4 col-xs-4">
               <span class="top-row">{{ talent.bookings }}</span>

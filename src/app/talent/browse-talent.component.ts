@@ -21,4 +21,12 @@ export class BrowseTalentComponent implements OnInit {
         );
   }
 
+  range(value: number) {
+    let a = []; 
+    for(let i = 0; i < value; ++i) { 
+      a.push(i+1) 
+    } 
+    return a; 
+  }
+
 }

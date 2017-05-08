@@ -6,8 +6,7 @@ import { Talent } from '../models/talent.model';
 import { TalentService } from '../services/talent.service'; 
 
 @Component({
-  templateUrl: './profile.component.html',
-  // styleUrls: ['./profile.component.css']
+  templateUrl: './profile.component.html'
 })
 export class ProfileComponent implements OnInit { 
   talentId;

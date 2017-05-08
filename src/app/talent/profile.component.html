@@ -11,7 +11,7 @@
               <div class="col-md-3 col-sm-3 col-xs-3 text-right"><!--<span data-toggle="quickview" data-toggle-element="#quickview"><a href="#quickview-chat" class="booking-cta" data-toggle="tooltip" data-placement="top" title="message"><i class="icon icon-bubble" aria-hidden="true"></i></a></span> --></div>
               <div class="col-md-6 col-sm-6 col-xs-6 text-center"> <img [src] = "talentDetail.profileimage" alt="" class="profile-photo img-circle"> </div>
               <div class="col-md-3 col-sm-3 col-xs-3 text-left"> <!--<a href="shortlist.html" class="booking-cta" data-toggle="tooltip" data-placement="top" title="shortlist"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a> --></div>
-            </div>
+            </div>            
             <div class="row">
               <div class="col-md-12 text-center">
                 <h3 class="m-t-20 m-b-0">{{ talentDetail.firstname }} {{ talentDetail.lastname }}</h3>
@@ -19,8 +19,17 @@
                 <!--<button type="button" class="btn btn-primary">Select to Hire</button>-->
               </div>
             </div>
+
           </div>
         </div>
+        <div class="row talent-stats m-t-50">
+          <div class="col-md-3 col-sm-3 col-xs-4 b-r b-grey-lightest p-l-30 p-r-30 sm-p-l-20 sm-p-r-20"> <span class="top-row fs-32">23</span><span class="bottom-row">bookings</span> </div>
+          <div class="col-md-3 col-sm-3 col-xs-4 b-r b-grey-lightest p-l-30 p-r-30 sm-p-l-20 sm-p-r-20"> <span class="top-row"><img src="../assets/images/tempal-verified.png" alt="" class="img-responsive"></span> <span class="bottom-row green">verified</span> </div>
+          <div class="col-md-3 col-sm-3 col-xs-4 b-r xs-no-border b-grey-lightest p-l-30 p-r-30 sm-p-l-20 sm-p-r-20 hour-rate"> <span class="top-row fs-32">€15</span><span class="bottom-row">avg. rate</span> </div>
+          <div class="col-md-3 col-sm-3 col-xs-12 p-l-30 p-r-30 sm-p-l-20 sm-p-r-20 xs-p-t-20">
+            <div class="talent-star-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+            <span class="bottom-row">rating</span> </div>
+          </div>
         <!--<div class="row talent-stats m-t-50">
           <div class="col-md-3 col-sm-3 col-xs-4 b-r b-grey-lightest p-l-30 p-r-30 sm-p-l-20 sm-p-r-20"> <span class="top-row fs-32">23</span><span class="bottom-row">bookings</span> </div>
           <div class="col-md-3 col-sm-3 col-xs-4 b-r b-grey-lightest p-l-30 p-r-30 sm-p-l-20 sm-p-r-20"> <span class="top-row"><img src="../assets/images/tempal-verified.png" alt="" class="img-responsive"></span> <span class="bottom-row green">verified</span> </div>
@@ -33,6 +42,37 @@
     </section>
     <!-- END PROMO SECTION --> 
      <!-- BEGIN INTRO CONTENT SECTION -->
+      <section class="m-t-30">
+      <div class="container">
+        <div class="row"> 
+          <!-- BEGIN MAIN AREA -->
+          <div class="col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-body lg">
+                <div class="row">
+                  <div class="col-md-12 text-center"> <img src="../assets/images/quotation-mark.svg" width="30" alt="" class="opac-20">
+                    <h6 class="m-t-30">Talent Pool Manager’s comments.</h6>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 m-t-20 p-b-20 text-center b-b b-dashed b-grey">
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ac, bibendum purus. In ac varius tellus.</p>
+                  </div>
+                </div>
+                <div class="row m-t-40 verified-stats">
+                  <div class="col-md-4 col-sm-4 text-center"> <span class="top-row"> <img src="assets/images/linkedin.svg" alt="" class="tempal-verified img-responsive"> </span> <span class="tempal-verified-text">Linkedin</span> </div>
+                  <div class="col-md-4 col-sm-4 text-center xs-m-t-10"> <span class="top-row"> <i class="fa fa-file-pdf-o" aria-hidden="true"></i> </span> <span class="tempal-verified-text">Cv</span> </div>
+                  <div class="col-md-4 col-sm-4 text-center xs-m-t-10"> <span class="top-row"> <i class="fa fa-paperclip" aria-hidden="true"></i> </span> <span class="tempal-verified-text">Work Visa</span> </div>
+                </div>
+              </div>
+            </div>
+            <!-- END --> 
+            
+          </div>
+          <!-- END MAIN AREA --> 
+        </div>
+      </div>
+    </section>
     <!-- BEGIN INTRO CONTENT SECTION -->
     <section class="profile-details">
       <div class="container">
@@ -43,7 +83,34 @@
               <div class="panel-body">
                 <div class="row">
                   <div class="col-lg-5 col-md-6 col-sm-12 eq-height">
-                    <div class="m-r-20 xs-m-r-0">      
+                    <div class="m-r-20 xs-m-r-0">
+
+                     <div class="col-md-12 m-t-20">
+                        <div class="row">
+                          <div class="col-md-12 column b-t sm-b-t sm-b-b b-dashed b-grey p-t-20 sm-p-b-20" >
+                           <h6>Work History</h6>                       
+                        <div class = "list-group">                        
+                         <div class = "list-group-item">
+                          <h6 class = "list-group-item-heading">
+                           TPC India Pvt Ltd
+                         </h6>
+                         <p class = "list-group-item-text">
+                           12/04/2011 - 13/04/2016
+                         </p>
+                         </div>
+                         <div class = "list-group-item">
+                          <h6 class = "list-group-item-heading">
+                           EDC Pvt Ltd
+                         </h6>
+                         <p class = "list-group-item-text">
+                           12/04/2011 - 13/04/2016
+                         </p>
+                         </div>                       
+                       </div>
+                          </div>
+                        </div>
+                      </div> 
+
                       <div class="col-md-12 m-t-20"> 
                         <!-- start expertise -->
                         <div id="expertise-row">
@@ -72,7 +139,8 @@
                           </div>
                         </div>
                         <!-- end expertise --> 
-                      </div>
+                      </div>                     
+
                       <div class="col-md-12 m-t-20">
                         <div class="row">
                           <div class="col-md-12 column b-t sm-b-t sm-b-b b-dashed b-grey p-t-20 sm-p-b-20" >
@@ -92,23 +160,7 @@
                             </ul>
                           </div>
                         </div>
-                      </div>
-
-                       <div class="col-md-12 m-t-20">
-                        <div class="row">
-                         
-                            <div class="col-md-6 col-sm-6 p-t-20 b-r b-dashed b-grey">
-                        <div class="block-title">currently based</div>
-                        <h4 class="no-margin">{{ talentDetail.location }}</h4>
-                      </div>
-                      <div class="col-md-6 col-sm-6 p-t-20">
-                        <div class="block-title">willing to work</div>
-                        <h4 class="no-margin">Max. {{ talentDetail.distance }}</h4>
-                      </div>
-                          </div>
-                      
-                      </div>
-
+                      </div>               
 
                     </div>
                   </div>
@@ -131,8 +183,27 @@
                         </div>
                         
                       </div>
+                    </div>
 
-                    </div>                   
+                    <div class="row m-t-15 m-l-20 xs-m-l-0 m-r-10 xs-m-r-0 talent-stats text-center">
+                      <div class="col-md-6 col-sm-6 p-t-20 b-r b-dashed b-grey">
+                        <div class="block-title">currently based</div>
+                        <h4 class="no-margin">{{ talentDetail.location }}</h4>
+                      </div>
+                      <div class="col-md-6 col-sm-6 p-t-20">
+                        <div class="block-title">willing to work</div>
+                        <h4 class="no-margin">Max. {{ talentDetail.distance }}</h4>
+                      </div>
+                    </div> 
+
+                    <div class="row m-l-20 xs-m-l-0 m-r-10 xs-m-r-0">
+                      <div class="col-md-12 column b-t sm-b-t sm-b-b b-dashed b-grey p-t-20 sm-p-b-20">
+                        <h6 class="m-t-15">Salary Expectation / Notice Period</h6>
+                      </div>
+                      <div class="col-md-12 m-t-20">
+                        <p>€2000 / 30 Days</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -140,24 +140,18 @@
                   <div class="col-lg-5 col-md-6 col-sm-12 eq-height">
                     <div class="m-r-20 xs-m-r-0">
 
-                     <div class="col-md-12 m-t-20">
+                     <div class="col-md-12 m-t-20">                        
                         <div class="row">
-                          <div class="col-md-12 column b-t sm-b-t sm-b-b b-dashed b-grey p-t-20 sm-p-b-20" >
-                           <h6>Work History</h6>                       
-                        <div class = "list-group" *ngFor="let work of talentDetail.workhistory;let i = index">                        
-                         <div class = "list-group-item">
-                          <h6 class = "list-group-item-heading">
-                           {{ work.company }}TPC India Pvt Ltd
-                         </h6>
-                         <p class = "list-group-item-text">
-                           {{ work.duration }}
-                         </p>
-                         </div>                                             
-                       </div>
+                          <div class="col-md-12 column b-t b-dashed b-grey p-t-20">
+                            <h6>Work History</h6>                                                        
+                              <div class="item" *ngFor="let work of talentDetail.workhistory;let i=index">
+                                <div class="semi-bold">{{ work.company }}</div>
+                                <div class="block-title">{{ work.duration }}</div>
+                                <div class="clearfix"></div>
+                              </div>  
                           </div>
-                        </div>
-                      </div> 
-
+                        </div>                       
+                    </div>  
                       <div class="col-md-12 m-t-20"> 
                         <!-- start expertise -->
                         <div id="expertise-row">
@@ -243,14 +237,17 @@
                       </div>
                     </div> 
 
-                    <div class="row m-l-20 xs-m-l-0 m-r-10 xs-m-r-0">
-                      <div class="col-md-12 column b-t sm-b-t sm-b-b b-dashed b-grey p-t-20 sm-p-b-20">
-                        <h6 class="m-t-15">Salary Expectation / Notice Period</h6>
+                    <div class="row m-t-15 m-l-20 xs-m-l-0 m-r-10 xs-m-r-0 talent-stats text-center">
+                      <div class="col-md-6 col-sm-6 p-t-20 b-r b-dashed b-grey">
+                        <div class="block-title">salary expectation</div>
+                        <h4 class="no-margin">€ {{ talentDetail.salaryexpectation }}</h4>
                       </div>
-                      <div class="col-md-12 m-t-20">
-                        <p>€ {{ talentDetail.salaryexpectation }} / {{ talentDetail.noticeperiod }} Days</p>
+                      <div class="col-md-6 col-sm-6 p-t-20">
+                        <div class="block-title">notice period</div>
+                        <h4 class="no-margin">{{ talentDetail.noticeperiod }} Days</h4>
                       </div>
-                    </div>
+                    </div> 
+                    
                   </div>
                 </div>
               </div>

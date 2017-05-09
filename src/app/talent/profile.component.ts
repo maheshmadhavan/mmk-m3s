@@ -144,4 +144,11 @@ export class ProfileComponent implements OnInit {
       this.activeItem = newValue;
     }
   }
+  range(value: number) {
+    let a = []; 
+    for(let i = 0; i < value; ++i) { 
+      a.push(i+1) 
+    } 
+    return a; 
+  }
 }

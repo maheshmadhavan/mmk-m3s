@@ -31,7 +31,26 @@
       "distance" : "20KM",
       "profileimage": "assets\/images\/talents\/jane-kelly.jpg",
       "locationlat" : "53.331038",
-      "locationlong" : "-6.233250"
+      "locationlong" : "-6.233250",
+      "salaryexpectation" : "2000",
+      "noticeperiod" : "30",
+      "cv" : "http://www.pdf995.com/samples/pdf.pdf",
+      "workvisa" : "http://www.pdf995.com/samples/pdf.pdf",
+      "linkedinurl" : "https://in.linkedin.com/",
+      "requirementmatching" : "4",
+      "educationrating" : "3",
+      "workrating" : "5",
+      "salaryrating" : "3",
+      "availabilityrating" : "5",
+      "managerscomment" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ac, bibendum purus. In ac varius tellus.",
+      "workhistory" : [{
+          "company" : "TPC India Pvt Ltd",
+          "duration" : "18/01/2011 - 13/04/2012"
+    },
+    {
+          "company" : "EDC India Pvt Ltd",
+          "duration" : "14/04/2012 - 13/11/2015"
+    }]      
   },
   {
     "talentid": "5002", 
@@ -65,7 +84,26 @@
       "distance" : "30KM",
       "profileimage": "assets\/images\/talents\/mark-craddock.jpg",
       "locationlat" : "-33.868820",
-      "locationlong" : "151.209296"
+      "locationlong" : "151.209296",
+      "salaryexpectation" : "2000",
+      "noticeperiod" : "30",
+      "cv" : "http://www.pdf995.com/samples/pdf.pdf",
+      "workvisa" : "http://www.pdf995.com/samples/pdf.pdf",
+      "linkedinurl" : "https://in.linkedin.com/",
+      "requirementmatching" : "3",
+      "educationrating" : "4",
+      "workrating" : "5",
+      "salaryrating" : "4",
+      "availabilityrating" : "5",
+      "managerscomment" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ac, bibendum purus. In ac varius tellus.",
+      "workhistory" : [{
+          "company" : "TPC India Pvt Ltd",
+          "duration" : "18/01/2011 - 13/04/2012"
+    },
+    {
+          "company" : "EDC India Pvt Ltd",
+          "duration" : "14/04/2012 - 13/11/2015"
+    }]
   },
   {
     "talentid": "5003", 
@@ -99,7 +137,26 @@
       "distance" : "30KM",
       "profileimage": "assets\/images\/talents\/dianne-johnson.jpg",
       "locationlat" : "51.896892",
-      "locationlong" : "-8.486316"
+      "locationlong" : "-8.486316",
+      "salaryexpectation" : "2000",
+      "noticeperiod" : "30",
+      "cv" : "http://www.pdf995.com/samples/pdf.pdf",
+      "workvisa" : "http://www.pdf995.com/samples/pdf.pdf",
+      "linkedinurl" : "https://in.linkedin.com/",
+      "requirementmatching" : "5",
+      "educationrating" : "5",
+      "workrating" : "4",
+      "salaryrating" : "5",
+      "availabilityrating" : "4",
+      "managerscomment" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ac, bibendum purus. In ac varius tellus.",
+      "workhistory" : [{
+          "company" : "TPC India Pvt Ltd",
+          "duration" : "18/01/2011 - 13/04/2012"
+    },
+    {
+          "company" : "EDC India Pvt Ltd",
+          "duration" : "14/04/2012 - 13/11/2015"
+    }]
   },
   {
     "talentid": "5004", 
@@ -133,7 +190,26 @@
       "distance" : "10KM",
       "profileimage": "assets\/images\/talents\/demo-talent.jpg",
       "locationlat" : "51.507351",
-      "locationlong" : "-0.127758"
+      "locationlong" : "-0.127758",
+      "salaryexpectation" : "2000",
+      "noticeperiod" : "30",
+      "cv" : "http://www.pdf995.com/samples/pdf.pdf",
+      "workvisa" : "http://www.pdf995.com/samples/pdf.pdf",
+      "linkedinurl" : "https://in.linkedin.com/",
+      "requirementmatching" : "4",
+      "educationrating" : "5",
+      "workrating" : "5",
+      "salaryrating" : "4",
+      "availabilityrating" : "3",
+      "managerscomment" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ac, bibendum purus. In ac varius tellus.",
+      "workhistory" : [{
+          "company" : "TPC India Pvt Ltd",
+          "duration" : "18/01/2011 - 13/04/2012"
+    },
+    {
+          "company" : "EDC India Pvt Ltd",
+          "duration" : "14/04/2012 - 13/11/2015"
+    }]
   },
   {
     "talentid": "5123", 
@@ -163,6 +239,26 @@
     "distance" : "40KM",
     "profileimage": "assets\/images\/talents\/lakshmikant-v.jpg",
     "locationlat" : "11.702716",
-    "locationlong" : "75.536404"
+    "locationlong" : "75.536404",
+    "salaryexpectation" : "2000",
+    "noticeperiod" : "30",
+    "cv" : "http://www.pdf995.com/samples/pdf.pdf",
+    "workvisa" : "http://www.pdf995.com/samples/pdf.pdf",
+    "linkedinurl" : "https://in.linkedin.com/",
+    "requirementmatching" : "5",
+    "educationrating" : "4",
+    "workrating" : "5",
+    "salaryrating" : "4",
+    "availabilityrating" : "5",
+    "managerscomment" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ac, bibendum purus. In ac varius tellus.",
+    "workhistory" : [{
+          "company" : "TPC India Pvt Ltd",
+          "duration" : "18/01/2011 - 13/04/2012"
+    },
+    {
+
+          "company" : "EDC India Pvt Ltd",
+          "duration" : "14/04/2012 - 13/11/2015"
+    }]
   }  
 ]

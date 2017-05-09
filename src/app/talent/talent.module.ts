@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ModalModule } from 'ng2-bootstrap/modal';
 
 import { TalentComponent } from './talent.component';
 import { TalentRoutingModule } from './talent-routing.module';
@@ -11,7 +12,8 @@ import { ProfileComponent } from './profile.component';
 @NgModule({
   imports: [
     TalentRoutingModule,
-    CommonModule
+    CommonModule,
+    ModalModule.forRoot()
   ],
   declarations: [ 
   	TalentComponent,

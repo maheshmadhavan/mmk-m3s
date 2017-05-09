@@ -22,11 +22,11 @@
       <div class="col-md-8 col-sm-8 col-xs-12">
         <h4 class="subtitle xs-text-center">{{ browsetalents.length }} Customer Service Contractors</h4>
       </div>
-      <!-- <div class="col-md-4 col-sm-4 col-xs-12">
+      <div class="col-md-4 col-sm-4 col-xs-12">
         <div class="text-right xs-text-center xs-m-t-20">
-          <button class="filters-toggle btn btn-outline sm-m-b-30" data-toggle="modal" data-target="#FilterModal"> Filters </button>
+          <button class="filters-toggle btn btn-outline sm-m-b-30" (click)="filterModal.show()" type="button"> Filters </button>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
 </section>
@@ -148,3 +148,125 @@
   </div>
 </section>
 <!-- END TALENT SECTION --> 
+
+
+<div class="modal fade fill-in grey" bsModal #filterModal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="modalFillInLabel" aria-hidden="true">
+  <button type="button" class="close" (click)="filterModal.hide()" data-dismiss="modal" aria-hidden="true"> <i class="icon icon-close_line"></i> </button>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="m-b-30">Refine {{ browsetalents.length }} Contractors</h4>
+      </div>
+      <div class="modal-body">         
+        <!-- START HOURLY RATE RANGE -->
+        <div class="panel panel-default m-t-30">
+          <div class="panel-heading">
+            <div class="panel-title">Salary Expectations</div>
+          </div>
+          <div class="panel-body">
+            <div class="row m-b-20">
+              <div class="col-sm-12 text-left">
+                <input id="raterange" class="form-control" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END HOURLY RATE RANGE --> 
+        <div class="row">
+          <div class="col-md-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="panel-title">Suitable Talent</div>
+              </div>
+              <div class="panel-body">
+                <div class="row m-b-10">
+                  <div class="col-sm-12">
+                    <div class="radio radio-primary">
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="m-b-10">
+                          <input type="radio" checked="checked" value="yes" name="suitableTalent" id="radioYes">
+                          <label for="radioYes">Yes</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="m-b-10">
+                          <input type="radio" value="no" name="suitableTalent" id="radioNo">
+                          <label for="radioNo">No</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="panel-title">Interview Availability</div>
+              </div>
+              <div class="panel-body">
+                <div class="row m-b-10">
+                  <div class="col-sm-12">
+                    <div class="radio radio-primary">
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="m-b-10">
+                          <input type="radio" checked="checked" value="yes" name="availability" id="availabilityYes">
+                          <label for="availabilityYes">Yes</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="m-b-10">
+                          <input type="radio" value="no" name="availability" id="availabilityNo">
+                          <label for="availabilityNo">No</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- START RATING -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="panel-title">Min. Rating</div>
+              </div>
+              <div class="panel-body">
+                <div class="stars stars-example-fontawesome text-center">
+                  <select id="example-fontawesome" name="rating" autocomplete="off">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="panel-title">Notice Period</div>
+              </div>
+              <div class="panel-body">
+                <input type="text" name="noticePeriod" class="form-control">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END RATING --> 
+        
+      </div>
+      <div class="modal-footer"> <a href="javascript:;" (click)="filterModal.hide()" class="btn btn-primary btn-lg">Apply Filters</a><br>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>

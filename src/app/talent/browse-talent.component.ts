@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild ,ElementRef } from '@angular/core';
+import { ModalDirective } from 'ng2-bootstrap/modal/modal.component';
 
 import { BrowseTalent } from '../models/browse-talent.model';
 import { BrowseTalentService } from '../services/browse-talent.service'; 
@@ -8,6 +9,7 @@ import { BrowseTalentService } from '../services/browse-talent.service';
 })
 export class BrowseTalentComponent implements OnInit {
   browsetalents: BrowseTalent[] = [];
+  @ViewChild('filterModal') public filterModal:ElementRef;
 
   constructor(private browseTalentService: BrowseTalentService) { }
 
@@ -28,5 +30,4 @@ export class BrowseTalentComponent implements OnInit {
     } 
     return a; 
   }
-
 }

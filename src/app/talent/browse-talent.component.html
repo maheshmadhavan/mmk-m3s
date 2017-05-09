@@ -237,14 +237,15 @@
                 <div class="panel-title">Min. Rating</div>
               </div>
               <div class="panel-body">
-                <div class="stars stars-example-fontawesome text-center">
-                  <select id="example-fontawesome" name="rating" autocomplete="off">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
+                <div class="rating">
+                  <span class="stars-container">
+                    <span *ngFor="let starIndex of clickableStarRange(5)" id="star{{ starIndex }}" class="fa star" (click)="selectedStar(starIndex)" [ngClass]="{'selected': selectedStarIndex == starIndex }"></span>
+                      <!-- <span id="star5" class="fa star"></span>
+                      <span id="star4" class="fa star"></span>
+                      <span id="star3" class="fa star"></span>
+                      <span id="star2" class="fa star"></span>
+                      <span id="star1" class="fa star"></span> -->
+                  </span>
                 </div>
               </div>
             </div>

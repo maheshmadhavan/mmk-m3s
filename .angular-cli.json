@@ -30,11 +30,16 @@
        "assets/plugins/switchery/css/switchery.min.css",
        "assets/plugins/ion-slider/css/ion.rangeSlider.css",
        "assets/css/ion.rangeSlider.skinFlat.css",
-       "assets/css/styles.css",
+       "assets/css/styles.css", 
        "assets/plugins/dzscalendar/css/dzstooltip.css",
-       "assets/plugins/dzscalendar/css/calendar_style.css" 
+       "assets/plugins/dzscalendar/css/calendar_style.css",
+       "../node_modules/ion-rangeslider/css/ion.rangeSlider.css",
+       "../node_modules/ion-rangeslider/css/ion.rangeSlider.skinFlat.css"
       ],
-      "scripts": [],
+      "scripts": [
+       "../node_modules/jquery/dist/jquery.min.js", 
+       "../node_modules/ion-rangeslider/js/ion.rangeSlider.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

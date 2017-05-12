@@ -1,0 +1,196 @@
+
+  <!-- START MAIN-CONTENT -->
+  <main class="main-content bg-grey-lighter">      
+     <!-- BEGIN INTRO CONTENT SECTION -->
+    <section class="m-t-30">
+      <div class="container">
+        <div class="row"> 
+          <!-- BEGIN MAIN AREA -->
+          <div class="col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="panel-title">Refine {{ browsetalents.length }} Contractors</div>
+              </div>
+            </div>
+            <!-- END --> 
+          </div>
+          <!-- END MAIN AREA --> 
+        </div>
+      </div>
+    </section>
+    <section>
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-12">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <div class="panel-title">Years of Experience</div>
+                    </div>          
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-sm-12 text-left">
+                        <ion-range-slider 
+                          type="double" #experience
+                          [min]="experienceSlider.min" 
+                          [max]="experienceSlider.max" 
+                          [from]="experienceSlider.from"
+                          [to]="experienceSlider.to"
+                          [grid]="experienceSlider.grid"
+                          [grid_num]="experienceSlider.grid_num"
+                          [prefix]="experienceSlider.prefix"
+                          [postfix]="experienceSlider.postfix"
+                          [max_postfix]="experienceSlider.max_postfix"
+                          hide_min_max="true"
+                          drag_interval="true"
+                          decorate_both="false"
+                          (onUpdate)="update(experience, $event)"
+                          (onChange)="update(experience, $event)"
+                          (onFinish)="finish(experience, $event)"></ion-range-slider>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- START HOURLY RATE RANGE -->
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <div class="panel-title">Salary Expectations</div>
+                    </div>          
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-sm-12 text-left">
+                          <ion-range-slider
+                            type="double" #salary
+                            [min]="salarySlider.min" 
+                            [max]="salarySlider.max" 
+                            [from]="salarySlider.from"
+                            [to]="salarySlider.to"
+                            [grid]="salarySlider.grid"
+                            [grid_num]="salarySlider.grid_num"
+                            [prefix]="salarySlider.prefix"
+                            [postfix]="salarySlider.postfix"
+                            [max_postfix]="salarySlider.max_postfix"
+                            hide_min_max="true"
+                            drag_interval="true"
+                            decorate_both="false"
+                            (onUpdate)="update(experience, $event)"
+                            (onChange)="update(experience, $event)"
+                            (onFinish)="finish(experience, $event)"></ion-range-slider>
+                          <!-- <input id="raterange" class="form-control" /> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END HOURLY RATE RANGE --> 
+
+                  <!-- START EDUCATION $ ELIBLITY TO WORK -->
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <div class="panel-title">Education</div>
+                        </div>
+                        <div class="panel-body">
+                          <select class="form-control">
+                            <option value="High school degree">High school degree</option>
+                            <option value="Associate degree">Associate degree</option>
+                            <option value="Bachelor's degree">Bachelor's degree</option>
+                            <option value="Master's degree">Master's degree</option>
+                            <option value="Professional degree">Professional degree</option>
+                            <option value="Doctorate">Doctorate</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <div class="panel-title">Eligibility to Work </div>
+                        </div>
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="col-md-6 col-sm-6 col-xs-12">
+                                  <input type="radio" checked="checked" value="yes" name="suitableTalent" id="radioYes">
+                                  <label for="radioYes">Yes</label>
+                              </div>
+                              <div class="col-md-6 col-sm-6 col-xs-12">
+                                  <input type="radio" value="no" name="suitableTalent" id="radioNo">
+                                  <label for="radioNo">No</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END EDUCATION $ ELIBLITY TO WORK --> 
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <div class="panel-title">Notice Period</div>
+                        </div>
+                        <div class="panel-body">
+                          <select class="form-control">
+                            <option value="N/A">N/A</option>
+                            <option value="30 Days">30 Days</option>
+                            <option value="60 Days">60 Days</option>
+                            <option value="90 Days">90 Days</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <div class="panel-title">Contract Type</div>
+                        </div>
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="col-md-6 col-sm-6 col-xs-12">
+                                  <input type="checkbox" checked="checked" value="contract" name="contractType" id="permenant"> Permanent
+                              </div>
+                              <div class="col-md-6 col-sm-6 col-xs-12">
+                                  <input type="checkbox" value="contract" name="contractType" id="contract"> Contract
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Location -->
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <div class="panel-title">Location</div>
+                    </div>          
+                    <div class="panel-body">
+                      <div class="row">
+                        <div style="height:350px;width:100%;max-width:100%;list-style:none; transition: none;overflow:hidden;">
+                          <div id="map" style="height:100%; width:100%;max-width:100%;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <div class="panel-title">Location Distance</div>
+                    </div>
+                    <div class="panel-body">
+                      <input type="text" name="locationDistance" id="locationDistance" class="form-control">     
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-md-12 text-right">
+                    <a href="javascript:;" [routerLink]="['/talent/browse-talents']" class="btn btn-primary btn-lg">Apply Filters</a>
+                  </div>                    
+                </div>
+    			</div>
+    		</div>
+    	</div>
+    </section>

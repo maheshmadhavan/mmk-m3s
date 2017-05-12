@@ -4,3 +4,8 @@
 #success{
     color:green;
 }
+
+.irs-grid {
+    bottom: inherit !important;
+    position: absolute;
+}

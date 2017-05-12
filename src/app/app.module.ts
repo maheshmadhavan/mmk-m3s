@@ -33,8 +33,7 @@ import { BrowseTalentService } from './services/browse-talent.service';
     AppComponent,
     FullLayoutComponent,
     SimpleLayoutComponent,
-    NAV_DROPDOWN_DIRECTIVES
-    
+    NAV_DROPDOWN_DIRECTIVES 
   ],
   providers: [{
       provide: LocationStrategy,

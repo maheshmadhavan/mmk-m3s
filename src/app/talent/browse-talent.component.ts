@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild ,ElementRef } from '@angular/core';
-import { ModalDirective } from 'ng2-bootstrap/modal/modal.component';
+import { Router } from '@angular/router';
+import { googlemaps } from 'googlemaps';
 
 import { BrowseTalent } from '../models/browse-talent.model';
 import { BrowseTalentService } from '../services/browse-talent.service'; 
@@ -10,10 +11,8 @@ import { BrowseTalentService } from '../services/browse-talent.service';
 })
 export class BrowseTalentComponent implements OnInit {
   browsetalents: BrowseTalent[] = [];
-  @ViewChild('filterModal') public filterModal:ElementRef;
-  selectedStarIndex = 0;
 
-  constructor(private browseTalentService: BrowseTalentService) { }
+  constructor(private browseTalentService: BrowseTalentService, private router: Router) { }
 
   ngOnInit() {
   	this.browsetalents = this.browseTalentService.getBrowseTalents();
@@ -33,16 +32,8 @@ export class BrowseTalentComponent implements OnInit {
     return a; 
   }
 
-  clickableStarRange(value: number) {
-    let a = []; 
-    for(let i = value; i > 0; i--) { 
-      a.push(i) 
-    } 
-    return a; 
+  filterTalent() {
+    this.router.navigate(['/talent/talent-filter']);
   }
 
-  selectedStar(starIndex: number) {
-    this.selectedStarIndex = starIndex;
-    console.log(this.selectedStarIndex);
-  }
 }

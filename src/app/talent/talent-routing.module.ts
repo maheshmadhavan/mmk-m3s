@@ -5,6 +5,7 @@ import { TalentComponent } from './talent.component';
 import { SectorComponent } from './sector.component';
 import { BrowseTalentComponent } from './browse-talent.component';
 import { ProfileComponent } from './profile.component';
+import { FilterComponent } from './filter.component'
 
 const routes: Routes = [
   {
@@ -35,6 +36,13 @@ const routes: Routes = [
       title: 'Profile'
     }
   },
+  {
+    path: 'talent-filter',
+    component: FilterComponent,
+    data: {
+      title: 'Talent Filter'
+    }
+  }
 ];
 
 @NgModule({

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ModalModule } from 'ng2-bootstrap/modal';
-import { IonRangeSliderModule } from "ng2-ion-range-slider";
+/* import { IonRangeSliderModule } from "ng2-ion-range-slider"; */
 
 import { TalentComponent } from './talent.component';
 import { TalentRoutingModule } from './talent-routing.module';
@@ -15,7 +15,7 @@ import { FilterComponent } from './filter.component';
     TalentRoutingModule,
     CommonModule,
     ModalModule.forRoot(),
-    IonRangeSliderModule
+   /* IonRangeSliderModule */
   ],
   declarations: [ 
   	TalentComponent,

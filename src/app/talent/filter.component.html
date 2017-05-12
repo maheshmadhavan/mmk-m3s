@@ -29,7 +29,14 @@
                     <div class="panel-body">
                       <div class="row">
                         <div class="col-sm-12 text-left">
-                        <ion-range-slider 
+                          <select class="form-control">
+                            <option value="0">0 Years</option>
+                            <option value="1">1-2 Years</option>
+                            <option value="2">3-5 Years</option>
+                            <option value="3">6-9 Years</option>
+                            <option value="4">10+ Years</option>
+                          </select>
+                        <!-- <ion-range-slider 
                           type="double" #experience
                           [min]="experienceSlider.min" 
                           [max]="experienceSlider.max" 
@@ -45,7 +52,7 @@
                           decorate_both="false"
                           (onUpdate)="update(experience, $event)"
                           (onChange)="update(experience, $event)"
-                          (onFinish)="finish(experience, $event)"></ion-range-slider>
+                          (onFinish)="finish(experience, $event)"></ion-range-slider> -->
                         </div>
                       </div>
                     </div>
@@ -58,7 +65,17 @@
                     <div class="panel-body">
                       <div class="row">
                         <div class="col-sm-12 text-left">
-                          <ion-range-slider
+                          <select class="form-control">
+                            <option value="0">€15k - €20k</option>
+                            <option value="1">€20k - €30k</option>
+                            <option value="2">€30k - €40k</option>
+                            <option value="3">€40k - €50k</option>
+                            <option value="4">€50k - €70k</option>
+                            <option value="5">€70k - €90k</option>
+                            <option value="6">€90k - €120k</option>
+                            <option value="7">€120k+</option>
+                          </select>
+                         <!--  <ion-range-slider
                             type="double" #salary
                             [min]="salarySlider.min" 
                             [max]="salarySlider.max" 
@@ -74,7 +91,7 @@
                             decorate_both="false"
                             (onUpdate)="update(experience, $event)"
                             (onChange)="update(experience, $event)"
-                            (onFinish)="finish(experience, $event)"></ion-range-slider>
+                            (onFinish)="finish(experience, $event)"></ion-range-slider> -->
                           <!-- <input id="raterange" class="form-control" /> -->
                         </div>
                       </div>

@@ -5,7 +5,6 @@ import { BrowseTalent } from '../models/browse-talent.model';
 import { BrowseTalentService } from '../services/browse-talent.service'; 
 
 @Component({
-  selector: 'talent-map',
   templateUrl: './filter.component.html',
   styleUrls : ['./browse-talent.component.css']
 })

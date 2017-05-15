@@ -8,22 +8,25 @@
     "address" : "Hume House,Pembroke Road,Ballsbridge,Ireland",
     "description": "I have spent the last six years developing my skills as a customer service manager for Megacompany Inc., where I have won several performance awards and been promoted twice. I love managing teams and solving customer problems.", 
     "jobtitle": "Customer Service Representative",
+    "expertiselevel": "10+ Years",
     "expertise" : [{
-        "sector":"Customer Service", 
-        "jobtitle":"Customer Service Representative",
-        "experience":"Some - A few experience"  
+      "sector":"Customer Service", 
+      "jobtitle":"Customer Service Representative",
+      "experience":"Some - A few experience"  
      },
      {
-        "sector":"Office Support", 
-        "jobtitle":"Office Support Manager",
-        "experience":"Little - A few experience"  
+      "sector":"Office Support", 
+      "jobtitle":"Office Support Manager",
+      "experience":"Little - A few experience"  
      },
      {
-        "sector":"Call Centre", 
-        "jobtitle":"Call Centre Executive",
-        "experience":"Some - A few experience"  
+      "sector":"Call Centre", 
+      "jobtitle":"Call Centre Executive",
+      "experience":"Some - A few experience"  
      }],
-      "languages" : [{
+     "education" : "Doctorate",
+     "contracttype" : "Permanent",
+     "languages" : [{
           "native": ["German"],
           "fluent": ["French","English"]
       }],
@@ -32,7 +35,7 @@
       "profileimage": "assets\/images\/talents\/jane-kelly.jpg",
       "locationlat" : "53.331038",
       "locationlong" : "-6.233250",
-      "salaryexpectation" : "2000",
+      "salaryexpectation" : "20k-30k",
       "noticeperiod" : "30",
       "cv" : "http://www.pdf995.com/samples/pdf.pdf",
       "workvisa" : "http://www.pdf995.com/samples/pdf.pdf",
@@ -44,13 +47,13 @@
       "availabilityrating" : "5",
       "managerscomment" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ac, bibendum purus. In ac varius tellus.",
       "workhistory" : [{
-          "company" : "TPC India Pvt Ltd",
-          "duration" : "18/01/2011 - 13/04/2012"
-    },
-    {
-          "company" : "EDC India Pvt Ltd",
-          "duration" : "14/04/2012 - 13/11/2015"
-    }]      
+        "company" : "TPC India Pvt Ltd",
+        "duration" : "18/01/2011 - 13/04/2012"
+      },
+      {
+        "company" : "EDC India Pvt Ltd",
+        "duration" : "14/04/2012 - 13/11/2015"
+      }]      
   },
   {
     "talentid": "5002", 
@@ -61,48 +64,51 @@
     "address" : "Sydney, Australia",
     "description": "My first job was as an administrative assistant for Macy’s in Fort Lauderdale, Florida. I learned a great deal in that role that served me well over the next 12 years. At the time, I wasn’t sure about my career path, so I next took a position selling real estate. It only lasted for six months, but I sure enjoyed it.", 
     "jobtitle": "System Administrator",
+    "expertiselevel": "1-2 Years",
     "expertise" : [{
-        "sector":"Customer Service", 
-        "jobtitle":"Customer Service Representative",
-        "experience":"Some - A few experience"  
-     },
-     {
-        "sector":"Office Support", 
-        "jobtitle":"Office Support Manager",
-        "experience":"Little - A few experience"  
-     },
-     {
+      "sector":"Customer Service", 
+      "jobtitle":"Customer Service Representative",
+      "experience":"Some - A few experience"  
+    },
+    {
+      "sector":"Office Support", 
+      "jobtitle":"Office Support Manager",
+      "experience":"Little - A few experience"  
+    },
+    {
         "sector":"Call Centre", 
         "jobtitle":"Call Centre Executive",
         "experience":"Some - A few experience"  
-     }],
-      "languages" : [{
-          "native": ["German","English"],
-          "fluent": ["French"]
-      }],
-      "location" : "Australia",
-      "distance" : "30KM",
-      "profileimage": "assets\/images\/talents\/mark-craddock.jpg",
-      "locationlat" : "-33.868820",
-      "locationlong" : "151.209296",
-      "salaryexpectation" : "2000",
-      "noticeperiod" : "30",
-      "cv" : "http://www.pdf995.com/samples/pdf.pdf",
-      "workvisa" : "http://www.pdf995.com/samples/pdf.pdf",
-      "linkedinurl" : "https://in.linkedin.com/",
-      "requirementmatching" : "3",
-      "educationrating" : "4",
-      "workrating" : "5",
-      "salaryrating" : "4",
-      "availabilityrating" : "5",
-      "managerscomment" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ac, bibendum purus. In ac varius tellus.",
-      "workhistory" : [{
-          "company" : "TPC India Pvt Ltd",
-          "duration" : "18/01/2011 - 13/04/2012"
+    }],
+    "education" : "Professional Degree",
+    "contracttype" : "Contract",    
+    "languages" : [{
+        "native": ["German","English"],
+        "fluent": ["French"]
+    }],
+    "location" : "Australia",
+    "distance" : "30KM",
+    "profileimage": "assets\/images\/talents\/mark-craddock.jpg",
+    "locationlat" : "-33.868820",
+    "locationlong" : "151.209296",
+    "salaryexpectation" : "15k-20k",
+    "noticeperiod" : "30",
+    "cv" : "http://www.pdf995.com/samples/pdf.pdf",
+    "workvisa" : "http://www.pdf995.com/samples/pdf.pdf",
+    "linkedinurl" : "https://in.linkedin.com/",
+    "requirementmatching" : "3",
+    "educationrating" : "4",
+    "workrating" : "5",
+    "salaryrating" : "4",
+    "availabilityrating" : "5",
+    "managerscomment" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ac, bibendum purus. In ac varius tellus.",
+    "workhistory" : [{
+      "company" : "TPC India Pvt Ltd",
+      "duration" : "18/01/2011 - 13/04/2012"
     },
     {
-          "company" : "EDC India Pvt Ltd",
-          "duration" : "14/04/2012 - 13/11/2015"
+      "company" : "EDC India Pvt Ltd",
+      "duration" : "14/04/2012 - 13/11/2015"
     }]
   },
   {
@@ -114,48 +120,51 @@
     "address" : "Cork, Ireland",
     "description": "I have more than five years of experience as a technical project manager at top Wall Street companies. Most recently, I led the development of an award-winning new trading platform. I’m a person who thrives in a fast-paced environment so right now I’m looking for an opportunity to apply my technical exp and my creative problem solving skills at an innovative software company like this one.", 
     "jobtitle": "Technical Support",
+    "expertiselevel": "6-9 Years",
     "expertise" : [{
-        "sector":"Customer Service", 
-        "jobtitle":"Customer Service Representative",
-        "experience":"Some - A few experience"  
-     },
-     {
-        "sector":"Office Support", 
-        "jobtitle":"Office Support Manager",
-        "experience":"Little - A few experience"  
-     },
-     {
-        "sector":"Call Centre", 
-        "jobtitle":"Call Centre Executive",
-        "experience":"Some - A few experience"  
-     }],
-      "languages" : [{
-          "native": ["English"],
-          "fluent": ["French"]
-      }],
-      "location" : "Cork",
-      "distance" : "30KM",
-      "profileimage": "assets\/images\/talents\/dianne-johnson.jpg",
-      "locationlat" : "51.896892",
-      "locationlong" : "-8.486316",
-      "salaryexpectation" : "2000",
-      "noticeperiod" : "30",
-      "cv" : "http://www.pdf995.com/samples/pdf.pdf",
-      "workvisa" : "http://www.pdf995.com/samples/pdf.pdf",
-      "linkedinurl" : "https://in.linkedin.com/",
-      "requirementmatching" : "5",
-      "educationrating" : "5",
-      "workrating" : "4",
-      "salaryrating" : "5",
-      "availabilityrating" : "4",
-      "managerscomment" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ac, bibendum purus. In ac varius tellus.",
-      "workhistory" : [{
-          "company" : "TPC India Pvt Ltd",
-          "duration" : "18/01/2011 - 13/04/2012"
+    "sector":"Customer Service", 
+      "jobtitle":"Customer Service Representative",
+      "experience":"Some - A few experience"  
     },
     {
-          "company" : "EDC India Pvt Ltd",
-          "duration" : "14/04/2012 - 13/11/2015"
+      "sector":"Office Support", 
+      "jobtitle":"Office Support Manager",
+      "experience":"Little - A few experience"  
+    },
+    {
+      "sector":"Call Centre", 
+      "jobtitle":"Call Centre Executive",
+      "experience":"Some - A few experience"  
+    }],
+    "education" : "Master's Degree",
+    "contracttype" : "Contract",
+    "languages" : [{
+        "native": ["English"],
+        "fluent": ["French"]
+    }],
+    "location" : "Cork",
+    "distance" : "30KM",
+    "profileimage": "assets\/images\/talents\/dianne-johnson.jpg",
+    "locationlat" : "51.896892",
+    "locationlong" : "-8.486316",
+    "salaryexpectation" : "30k-40k",
+    "noticeperiod" : "30",
+    "cv" : "http://www.pdf995.com/samples/pdf.pdf",
+    "workvisa" : "http://www.pdf995.com/samples/pdf.pdf",
+    "linkedinurl" : "https://in.linkedin.com/",
+    "requirementmatching" : "5",
+    "educationrating" : "5",
+    "workrating" : "4",
+    "salaryrating" : "5",
+    "availabilityrating" : "4",
+    "managerscomment" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ac, bibendum purus. In ac varius tellus.",
+    "workhistory" : [{
+      "company" : "TPC India Pvt Ltd",
+      "duration" : "18/01/2011 - 13/04/2012"
+    },
+    {
+      "company" : "EDC India Pvt Ltd",
+      "duration" : "14/04/2012 - 13/11/2015"
     }]
   },
   {
@@ -167,48 +176,51 @@
     "address" : "London, UK",
     "description": "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ", 
     "jobtitle": "Customer Service Representative",
+    "expertiselevel": "0 Years",
     "expertise" : [{
-        "sector":"Customer Service", 
-        "jobtitle":"Customer Service Representative",
-        "experience":"Some - A few experience"  
-     },
-     {
-        "sector":"Office Support", 
-        "jobtitle":"Office Support Manager",
-        "experience":"Little - A few experience"  
-     },
-     {
-        "sector":"Call Centre", 
-        "jobtitle":"Call Centre Executive",
-        "experience":"Some - A few experience"  
-     }],
-      "languages" : [{
-          "native": ["Spanish"],
-          "fluent": ["French","English"]
-      }],
-      "location" : "London",
-      "distance" : "10KM",
-      "profileimage": "assets\/images\/talents\/demo-talent.jpg",
-      "locationlat" : "51.507351",
-      "locationlong" : "-0.127758",
-      "salaryexpectation" : "2000",
-      "noticeperiod" : "30",
-      "cv" : "http://www.pdf995.com/samples/pdf.pdf",
-      "workvisa" : "http://www.pdf995.com/samples/pdf.pdf",
-      "linkedinurl" : "https://in.linkedin.com/",
-      "requirementmatching" : "4",
-      "educationrating" : "5",
-      "workrating" : "5",
-      "salaryrating" : "4",
-      "availabilityrating" : "3",
-      "managerscomment" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ac, bibendum purus. In ac varius tellus.",
-      "workhistory" : [{
-          "company" : "TPC India Pvt Ltd",
-          "duration" : "18/01/2011 - 13/04/2012"
+      "sector":"Customer Service", 
+      "jobtitle":"Customer Service Representative",
+      "experience":"Some - A few experience"  
     },
     {
-          "company" : "EDC India Pvt Ltd",
-          "duration" : "14/04/2012 - 13/11/2015"
+      "sector":"Office Support", 
+      "jobtitle":"Office Support Manager",
+      "experience":"Little - A few experience"  
+    },
+    {
+      "sector":"Call Centre", 
+      "jobtitle":"Call Centre Executive",
+      "experience":"Some - A few experience"  
+    }],
+    "education" : "Associate Degree",
+    "contracttype" : "Permanent",
+    "languages" : [{
+        "native": ["Spanish"],
+        "fluent": ["French","English"]
+    }],
+    "location" : "London",
+    "distance" : "10KM",
+    "profileimage": "assets\/images\/talents\/demo-talent.jpg",
+    "locationlat" : "51.507351",
+    "locationlong" : "-0.127758",
+    "salaryexpectation" : "40k-50k",
+    "noticeperiod" : "30",
+    "cv" : "http://www.pdf995.com/samples/pdf.pdf",
+    "workvisa" : "http://www.pdf995.com/samples/pdf.pdf",
+    "linkedinurl" : "https://in.linkedin.com/",
+    "requirementmatching" : "4",
+    "educationrating" : "5",
+    "workrating" : "5",
+    "salaryrating" : "4",
+    "availabilityrating" : "3",
+    "managerscomment" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ac, bibendum purus. In ac varius tellus.",
+    "workhistory" : [{
+      "company" : "TPC India Pvt Ltd",
+      "duration" : "18/01/2011 - 13/04/2012"
+    },
+    {
+      "company" : "EDC India Pvt Ltd",
+      "duration" : "14/04/2012 - 13/11/2015"
     }]
   },
   {
@@ -220,17 +232,19 @@
     "address" : "Mahe, India",
     "description": "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ", 
     "jobtitle": "Customer Service Representative",
+    "expertiselevel": "3-5 Years",
     "expertise" : [{
-        "sector":"Customer Service", 
-        "jobtitle":"Customer Service Representative",
-        "experience":"Some - A few experience"  
-     },
-     {
-        "sector":"Office Support", 
-        "jobtitle":"Office Support Manager",
-        "experience":"Little - A few experience"  
-     }
-    ],
+      "sector":"Customer Service", 
+      "jobtitle":"Customer Service Representative",
+      "experience":"Some - A few experience"  
+    },
+    {
+      "sector":"Office Support", 
+      "jobtitle":"Office Support Manager",
+      "experience":"Little - A few experience"  
+    }],
+    "education" : "Bachelor's Degree",
+    "contracttype" : "Permanent",
     "languages" : [{
         "native": ["German","English"],
         "fluent": ["French","English"]
@@ -240,7 +254,7 @@
     "profileimage": "assets\/images\/talents\/lakshmikant-v.jpg",
     "locationlat" : "11.702716",
     "locationlong" : "75.536404",
-    "salaryexpectation" : "2000",
+    "salaryexpectation" : "50k-70k",
     "noticeperiod" : "30",
     "cv" : "http://www.pdf995.com/samples/pdf.pdf",
     "workvisa" : "http://www.pdf995.com/samples/pdf.pdf",
@@ -252,13 +266,12 @@
     "availabilityrating" : "5",
     "managerscomment" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ac, bibendum purus. In ac varius tellus.",
     "workhistory" : [{
-          "company" : "TPC India Pvt Ltd",
-          "duration" : "18/01/2011 - 13/04/2012"
+      "company" : "TPC India Pvt Ltd",
+      "duration" : "18/01/2011 - 13/04/2012"
     },
     {
-
-          "company" : "EDC India Pvt Ltd",
-          "duration" : "14/04/2012 - 13/11/2015"
+      "company" : "EDC India Pvt Ltd",
+      "duration" : "14/04/2012 - 13/11/2015"
     }]
   }  
 ]

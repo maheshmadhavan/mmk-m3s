@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild ,ElementRef } from '@angular/core';
 import { googlemaps } from 'googlemaps';
+import { ModalDirective } from 'ng2-bootstrap/modal/modal.component';
 
 import { BrowseTalent } from '../models/browse-talent.model';
 import { BrowseTalentService } from '../services/browse-talent.service'; 
@@ -12,23 +13,25 @@ export class FilterComponent implements OnInit {
   browsetalents: BrowseTalent[] = [];
   experienceSlider;
   salarySlider;
-  options;
-  map;
-  places;
-  apiError;
-  apiStatus;
-  marker;
-  place = {};
-  result;
-  markers = [];
+  mapOptions;
+  filterMap;
+  filterPlaces;
+  filterApiError;
+  filterApiStatus;
+  filterMarker;
+  filterResult;
+  filterMarkers = [];
   lat = 53.331038;
   lng = -6.233250;
   location = "Dublin";
   address = "Hume House,Pembroke Road,Ballsbridge,Ireland";
+  @ViewChild('filterModal') public filterModal:ElementRef;
 
   constructor(private browseTalentService: BrowseTalentService) { }
 
   ngOnInit() {
+    document.querySelector('body').classList.add('modal-open');
+
     this.browsetalents = this.browseTalentService.getBrowseTalents();
     this.browseTalentService.browseTalentChanged
       .subscribe(
@@ -65,29 +68,29 @@ export class FilterComponent implements OnInit {
       "max_postfix" : "+"
     };
 
-    this.options = {
+    this.mapOptions = {
         center: new google.maps.LatLng(this.lat, this.lng),
         zoom: 13,
         disableDefaultUI: true    
     };
 
-    this.map = new google.maps.Map(
-        document.getElementById("map"), this.options
+    this.filterMap = new google.maps.Map(
+       document.getElementById("mapFilter"), this.mapOptions
     );
 
-    this.places = new google.maps.places.PlacesService(this.map);
+    this.filterPlaces = new google.maps.places.PlacesService(this.filterMap);
     this.createMarker();
   }
 
   createMarker() {
-    this.marker = new google.maps.Marker({
-      map: this.map,
+    this.filterMarker = new google.maps.Marker({
+      map: this.filterMap,
       position: new google.maps.LatLng(this.lat, this.lng),
       title: this.location
     });
-    this.marker.content = '<div class="infoWindowContent">' + this.address + '</div>';
+    this.filterMarker.content = '<div class="infoWindowContent">' + this.address + '</div>';
     
-   this.markers.push(this.marker);
+   this.filterMarkers.push(this.filterMarker);
   }
 
   update(slider, event) {

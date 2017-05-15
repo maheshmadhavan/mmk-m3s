@@ -28,10 +28,13 @@ export class ProfileComponent implements OnInit {
   place = {};
   result;
   markers = [];
+  reloadCount = 0;
 
-  constructor( private talentService: TalentService,private route: ActivatedRoute) { }
+  constructor( private talentService: TalentService, private route: ActivatedRoute) { 
+  }
 
   ngOnInit() {
+    document.querySelector('body').classList.remove('modal-open');
     this.talentId = this.route.params.subscribe(params => {
       this.passedTalent = params['talentid']; 
      
@@ -58,43 +61,53 @@ export class ProfileComponent implements OnInit {
          this.languagesArray = lang;
       }
       this.native = this.languagesArray.native;
-      this.fluent = this.languagesArray.fluent;
-     
+      this.fluent = this.languagesArray.fluent;     
 
     } else {
-      this.talentDetail = {
-                            "talentid": "5000", 
-                            "firstname": "Test", 
-                            "lastname": "candidate", 
-                            "email": "testcandidate@premiergp.com", 
+      this.talentDetail = { "talentid": "5000", 
+                            "firstname": "Demo", 
+                            "lastname": "Talent", 
+                            "email": "dtalent@premiergp.com", 
                             "phonenumber": "123456789",
                             "address" : "Hume House,Pembroke Road,Ballsbridge,Ireland",
                             "description": "I have spent the last six years developing my skills as a customer service manager for Megacompany Inc., where I have won several performance awards and been promoted twice. I love managing teams and solving customer problems.", 
                             "jobtitle": "Customer Service Representative",
+                            "expertiselevel": "0 Years",
                             "expertise" : [{
-                                "sector":"Customer Service", 
-                                "jobtitle":"Customer Service Representative",
-                                "experience":"Some - A few experience"  
-                             },
-                             {
-                                "sector":"Office Support", 
-                                "jobtitle":"Office Support Manager",
-                                "experience":"Little - A few experience"  
-                             },
-                             {
-                                "sector":"Call Centre", 
-                                "jobtitle":"Call Centre Executive",
-                                "experience":"Some - A few experience"  
+                              "sector":"Customer Service", 
+                              "jobtitle":"Customer Service Representative",
+                              "experience":"Some - A few experience"  
                              }],
+                             "education" : "High School Degree",
+                             "contracttype" : "Permanent",
                               "languages" : [{
                                   "native": ["German"],
                                   "fluent": ["French","English"]
                               }],
                               "location" : "Dublin",
                               "distance" : "20KM",
-                              "profileimage": "/assets/images/talents/default.jpg",
+                              "profileimage": "assets\/images\/talents\/demo-talent.jpg",
                               "locationlat" : "53.331038",
-                              "locationlong" : "-6.233250"
+                              "locationlong" : "-6.233250",
+                              "salaryexpectation" : "15k-20k",
+                              "noticeperiod" : "30",
+                              "cv" : "http://www.pdf995.com/samples/pdf.pdf",
+                              "workvisa" : "http://www.pdf995.com/samples/pdf.pdf",
+                              "linkedinurl" : "https://in.linkedin.com/",
+                              "requirementmatching" : "4",
+                              "educationrating" : "3",
+                              "workrating" : "5",
+                              "salaryrating" : "3",
+                              "availabilityrating" : "5",
+                              "managerscomment" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique, diam a porttitor interdum, orci risus ultricies sapien, eget feugiat turpis mauris nec lorem. In eget sem accumsan, volutpat sem ac, bibendum purus. In ac varius tellus.",
+                              "workhistory" : [{
+                                "company" : "TPC India Pvt Ltd",
+                                "duration" : "18/01/2011 - 13/04/2012"
+                              },
+                              {
+                                "company" : "EDC India Pvt Ltd",
+                                "duration" : "14/04/2012 - 13/11/2015"
+                              }]      
                           };
    }   
 
@@ -119,12 +132,7 @@ export class ProfileComponent implements OnInit {
         });
         this.marker.content = '<div class="infoWindowContent">' + this.talentDetail.address + '</div>';
         
-        // google.maps.event.addListener(this.marker, 'click', function(){
-        //     infoWindow.setContent('<h2>' + marker.title + '</h2>' + marker.content);
-        //     infoWindow.open($scope.map, marker);
-        // });
-        
-       this.markers.push(this.marker);
+        this.markers.push(this.marker);
   }
 
   viewPrevious(newValue: number) {
@@ -144,6 +152,7 @@ export class ProfileComponent implements OnInit {
       this.activeItem = newValue;
     }
   }
+
   range(value: number) {
     let a = []; 
     for(let i = 0; i < value; ++i) { 

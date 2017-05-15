@@ -1,28 +1,13 @@
-
-  <!-- START MAIN-CONTENT -->
-  <main class="main-content bg-grey-lighter">      
-     <!-- BEGIN INTRO CONTENT SECTION -->
-    <section class="m-t-30">
-      <div class="container">
-        <div class="row"> 
-          <!-- BEGIN MAIN AREA -->
-          <div class="col-md-12">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <div class="panel-title">Refine {{ browsetalents.length }} Contractors</div>
-              </div>
-            </div>
-            <!-- END --> 
-          </div>
-          <!-- END MAIN AREA --> 
-        </div>
+<div class="modal fade fill-in grey in" id="FilterModal" tabindex="-1" style="display: block;">
+  <button type="button" class="close" [routerLink]="['/talent/browse-talents']" data-dismiss="modal" aria-hidden="true"> <i class="icon icon-close_line"></i> </button>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="m-b-30">Refine {{ browsetalents.length }} Contractors</h4>
       </div>
-    </section>
-    <section>
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-12">
-                  <div class="panel panel-default">
+      <div class="modal-body"> 
+        <!-- START DATES -->
+        <div class="panel panel-default">
                     <div class="panel-heading">
                       <div class="panel-title">Years of Experience</div>
                     </div>          
@@ -108,11 +93,11 @@
                         </div>
                         <div class="panel-body">
                           <select class="form-control">
-                            <option value="High school degree">High school degree</option>
-                            <option value="Associate degree">Associate degree</option>
-                            <option value="Bachelor's degree">Bachelor's degree</option>
-                            <option value="Master's degree">Master's degree</option>
-                            <option value="Professional degree">Professional degree</option>
+                            <option value="High school Degree">High school Degree</option>
+                            <option value="Associate Degree">Associate Degree</option>
+                            <option value="Bachelor's Degree">Bachelor's Degree</option>
+                            <option value="Master's Degree">Master's Degree</option>
+                            <option value="Professional Degree">Professional Degree</option>
                             <option value="Doctorate">Doctorate</option>
                           </select>
                         </div>
@@ -187,7 +172,7 @@
                     <div class="panel-body">
                       <div class="row">
                         <div style="height:350px;width:100%;max-width:100%;list-style:none; transition: none;overflow:hidden;">
-                          <div id="map" style="height:100%; width:100%;max-width:100%;"></div>
+                          <div id="mapFilter" style="height:100%; width:100%;max-width:100%;"></div>
                         </div>
                       </div>
                     </div>
@@ -195,19 +180,19 @@
                   
                   <div class="panel panel-default">
                     <div class="panel-heading">
-                      <div class="panel-title">Location Distance</div>
+                      <div class="panel-title">Willing to Work (KM)</div>
                     </div>
                     <div class="panel-body">
                       <input type="text" name="locationDistance" id="locationDistance" class="form-control">     
                   </div>
                 </div>
-                
-                <div class="row">
-                  <div class="col-md-12 text-right">
-                    <a href="javascript:;" [routerLink]="['/talent/browse-talents']" class="btn btn-primary btn-lg">Apply Filters</a>
-                  </div>                    
-                </div>
-    			</div>
-    		</div>
-    	</div>
-    </section>
+        <!-- END RATING --> 
+        
+      </div>
+      <div class="modal-footer"> <a href="javascript:;" [routerLink]="['/talent/browse-talents']" class="btn btn-primary btn-lg">Apply Filters</a><br>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>

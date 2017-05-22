@@ -8,6 +8,7 @@ import { UserService } from './user.service';
 export class AuthenticationService {
   private users = [ ];
   authenticatedUser;
+  clientloggedIn = false;
  
   constructor(private router: Router, private userService: UserService){
     this.users = this.userService.getUsers();
@@ -19,9 +20,10 @@ export class AuthenticationService {
         );
   }
  
-  logout() {
+  logout() {    
     localStorage.removeItem("user");
     localStorage.removeItem("username");
+    localStorage.removeItem("clientloggedInflag");
     localStorage.clear();
     this.router.navigate(['pages/login']);
   }
@@ -31,10 +33,15 @@ export class AuthenticationService {
     if (this.authenticatedUser && this.authenticatedUser.password === user.password){ 
       localStorage.setItem("user", JSON.stringify(this.authenticatedUser));      
       localStorage.setItem("username", this.authenticatedUser.firstname); 
-      if(this.authenticatedUser.accounttype == 'client')     
-        this.router.navigate(['talent/sector']);
-      else
-        this.router.navigate(['pages']);
+      if(this.authenticatedUser.accounttype == 'client'){  
+        this.clientloggedIn = true;
+        localStorage.setItem("clientloggedInflag",  '1');   
+        this.router.navigate(['talent/sector']);}
+      else{
+       // this.router.navigate(['pages']);
+       this.clientloggedIn = false;
+       this.router.navigate(['talent/sector']);
+      }
       return true;
     }   
     return false;
@@ -46,4 +53,20 @@ export class AuthenticationService {
         this.router.navigate(['pages/login']);
     }
   } 
+    isAuthenticated(){
+    if(localStorage.getItem("clientloggedInflag") == '1'){
+      this.clientloggedIn = true;
+    }else{
+      this.clientloggedIn = false;
+    }
+    const promise = new Promise(
+      (resolve, reject) =>{
+        setTimeout(() => {          
+          resolve(this.clientloggedIn)
+        } ,800);
+      }
+      );
+   // console.log(promise);
+    return promise;
+  }
 }

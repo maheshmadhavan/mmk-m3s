@@ -3,10 +3,20 @@
       "id": "5000", 
       "firstname": "Mahesh", 
       "lastname": "Madhavan", 
-      "email": "demo@premiergp.com", 
+      "email": "mmadhavan@premiergp.com", 
       "phonenumber": "123456789", 
       "password": "mmk2017", 
       "accounttype": "client",        
       "status": "Active"
-    }   
+    },
+    {
+      "id": "5001", 
+      "firstname": "Lakshmi", 
+      "lastname": "V M", 
+      "email": "lvm@premiergp.com", 
+      "phonenumber": "123456789", 
+      "password": "mmk2017", 
+      "accounttype": "talent",        
+      "status": "Active"
+    }     
 ]

@@ -21,6 +21,9 @@ import { UserService } from './services/user.service';
 import { SectorService } from './services/sector.service';
 import { TalentService } from './services/talent.service';
 import { BrowseTalentService } from './services/browse-talent.service';
+import { CreateTalentComponent } from './talent/create-talent.component';
+import { P404Component } from './pages/404.component';
+import { AuthGuard } from './auth-guard.service';
 
 @NgModule({
   imports: [
@@ -33,7 +36,9 @@ import { BrowseTalentService } from './services/browse-talent.service';
     AppComponent,
     FullLayoutComponent,
     SimpleLayoutComponent,
-    NAV_DROPDOWN_DIRECTIVES 
+    NAV_DROPDOWN_DIRECTIVES,
+    P404Component,
+    CreateTalentComponent
   ],
   providers: [{
       provide: LocationStrategy,
@@ -43,7 +48,7 @@ import { BrowseTalentService } from './services/browse-talent.service';
     UserService,
     SectorService,
     BrowseTalentService,
-    TalentService
+    TalentService,AuthGuard
   ],
   bootstrap: [ AppComponent ]
 })

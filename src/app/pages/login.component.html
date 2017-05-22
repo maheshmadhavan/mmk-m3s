@@ -8,34 +8,36 @@
             <p class="p-t-25">Login to your <span class="semi-bold">account</span></p>
           </div>
           <!-- START Form Control-->
+           <p class="help-block" style="color:red;" *ngIf="!errorflagemail && !validationErrorflag ">{{ validationError }}</p>
           <div class="form-group form-group-default">
             <label>Email Address</label>
             <div class="controls">
               <input type="text"
               class="form-control"
               placeholder="Email"
+              tabindex = "1"
               ngModel
               name = "email"
               required
               email
               #email="ngModel"> 
-            </div>
-            <!-- <p class="help-block" style="color:red;" *ngIf="!email.valid && email.touched">Please enter a valid email id!</p> -->
-          </div>          
+            </div>            
+          </div>    
+          <p class="help-block" style="color:red;" *ngIf="!email.valid && errorflagemail">Please enter a valid email id!</p>      
           <div class="form-group form-group-default">
             <label>Password <a href="#" class="pull-right" (click) = "showHidePassword()" >{{ showHideLabel }}</a></label>
             <div class="controls">
               <input type="{{ passType }}"
               class="form-control"
               placeholder="Password"
+              tabindex = "2"
               ngModel
               name="password"
               required
               #password="ngModel"> 
-            </div>
-            <!-- <p class="help-block" style="color:red;" *ngIf="!password.valid && password.touched">Please enter a valid password!</p> -->
-            <p class="help-block" style="color:red;" *ngIf="!success">{{ validationError }}</p>
+            </div>                       
           </div>
+          <p class="help-block" style="color:red;" *ngIf="!password.valid && validationErrorflag">Please enter a valid password!</p>
           <button class="btn btn-primary btn-lg full-width m-t-20" type="submit">Login</button>
           <div class="m-t-40 sm-p-b-20 clearfix">
           <p class="text-center"><a href="" [routerLink]="['/pages/forgot']">Forgot password?</a></p>

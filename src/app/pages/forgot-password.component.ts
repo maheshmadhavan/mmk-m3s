@@ -9,10 +9,17 @@ export class ForgotPasswordComponent {
   @ViewChild('f') forgotForm: NgForm;
   success = false;
   notValid;
+  errorflagemail = false;
 	constructor() { }
   
   onResetPass() {
     this.notValid = "";
+    this.errorflagemail = false; 
+    this.success = false;  
+    if(this.forgotForm.value.email == undefined || this.forgotForm.value.email === ""){      
+      this.errorflagemail = true;
+      return;
+    }
     if(this.forgotForm.valid){
       if(this.forgotForm.value.email === 'demo@premiergp.com'){
         this.success = true; 
@@ -21,11 +28,7 @@ export class ForgotPasswordComponent {
       else{
         this.notValid ="The email id does not exists"; 
       }
-    }      
-    else{
-      this.notValid ="Please enter a valid email!"; 
-    } 
-  
-     
+    }
   }
+  
 }

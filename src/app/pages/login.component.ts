@@ -13,13 +13,23 @@ export class LoginComponent {
   success = true;
   validationError = '';
   passType = "password";
-  showHideLabel = "SHOW"
+  showHideLabel = "SHOW";
+  errorflagemail = false;
+  validationErrorflag = false;
   //Getting form value and assigning to loginForm	
   @ViewChild('f') loginForm: NgForm; 	
   constructor(private authService : AuthenticationService) { }
 
   //Validating User
   onLogin(){ 
+  this.errorflagemail = false;  
+  this.validationErrorflag = false;
+  if (this.loginForm.value.email == null || this.loginForm.value.email == ""){
+    this.errorflagemail = true;
+  }
+  if (this.loginForm.value.password == null || this.loginForm.value.password == ""){
+    this.validationErrorflag = true;
+  }    
 	this.flag = this.authService.loginUser(this.loginForm.value);
 	if(this.flag === false)
 	{
